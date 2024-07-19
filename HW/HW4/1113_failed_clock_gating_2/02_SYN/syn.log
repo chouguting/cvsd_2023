@@ -1,0 +1,1001 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                 Version U-2022.12 for linux64 - Nov 22, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# Setting environment
+# sh mkdir -p Netlist
+# sh mkdir -p Report
+# set company {NTUGIEE}
+# set designer {Student}
+# set search_path      ". /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db  $search_path ../ ./"
+# set target_library   "slow.db"
+# set link_library     "* $target_library dw_foundation.sldb"
+# set symbol_library   "tsmc13.sdb generic.sdb"
+# set synthetic_library "dw_foundation.sldb"
+# set default_schematic_options {-size infinite}
+# # Import Design
+set DESIGN "IOTDF"
+IOTDF
+# set hdlin_translate_off_skip_text "TRUE"
+# set edifout_netlist_only "TRUE"
+# set verilogout_no_tri true
+# set hdlin_enable_presto_for_vhdl "TRUE"
+# set sh_enable_line_editing true
+# set sh_line_editing_mode emacs
+# history keep 100
+# alias h history
+analyze -format sverilog "flist.sv"
+Running PRESTO HDLC
+Compiling source file ./flist.sv
+Opening include file ../01_RTL/IOTDF.v
+Opening include file ../01_RTL/inputReceiver.v
+Opening include file ../01_RTL/desModule.v
+Opening include file ../01_RTL/desKeyScheduler.v
+Opening include file ../01_RTL/desFfunction.v
+Opening include file ../01_RTL/outputModule.v
+Opening include file ../01_RTL/crcModule.v
+Opening include file ../01_RTL/binaryGrayConverter.v
+Presto compilation completed successfully.
+Loading db file '/home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+1
+elaborate $DESIGN
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 144 in file
+	'../01_RTL/IOTDF.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           152            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine IOTDF line 133 in file
+		'../01_RTL/IOTDF.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| cuerrent_state_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (IOTDF)
+Elaborated 1 design.
+Current design is now 'IOTDF'.
+Information: Building the design 'inputReceiver'. (HDL-193)
+Warning:  ../01_RTL/inputReceiver.v:30: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 99 in file
+	'../01_RTL/inputReceiver.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           113            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine inputReceiver line 40 in file
+		'../01_RTL/inputReceiver.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| input_parts_reg_reg | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine inputReceiver line 67 in file
+		'../01_RTL/inputReceiver.v'.
+=========================================================================================
+|         Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=========================================================================================
+|   save_to_input_128_reg_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      cuerrent_state_reg       | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+| input_parts_counter_value_reg | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       input_128_reg_reg       | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+|    received_data_valid_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+=========================================================================================
+Presto compilation completed successfully. (inputReceiver)
+Information: Building the design 'desModule'. (HDL-193)
+
+Statistics for case statements in always block at line 153 in file
+	'../01_RTL/desModule.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           178            |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+	in routine desModule line 109 in file
+		'../01_RTL/desModule.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| des_right_part_reg_reg | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+| current_des_state_reg  | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+| saved_main_key_reg_reg | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+| des_round_counter_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+| des_left_part_reg_reg  | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+==================================================================================
+Presto compilation completed successfully. (desModule)
+Information: Building the design 'crcModule'. (HDL-193)
+
+Statistics for case statements in always block at line 143 in file
+	'../01_RTL/crcModule.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           163            |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+	in routine crcModule line 101 in file
+		'../01_RTL/crcModule.v'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| saved_remainder_reg_reg | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    current_state_reg    | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  crc_round_counter_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   saved_data_reg_reg    | Flip-flop |  122  |  Y  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+Presto compilation completed successfully. (crcModule)
+Information: Building the design 'binaryGrayConverter'. (HDL-193)
+Warning:  ../01_RTL/binaryGrayConverter.v:325: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 42 in file
+	'../01_RTL/binaryGrayConverter.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            43            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 134 in file
+	'../01_RTL/binaryGrayConverter.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           135            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 210 in file
+	'../01_RTL/binaryGrayConverter.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           211            |    auto/auto     |
+|           213            |    auto/auto     |
+|           270            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 364 in file
+	'../01_RTL/binaryGrayConverter.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           379            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine binaryGrayConverter line 334 in file
+		'../01_RTL/binaryGrayConverter.v'.
+=========================================================================================
+|         Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=========================================================================================
+| gray_to_bin_xor_carry_reg_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|       current_state_reg       | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  converter_round_counter_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|         data_reg_reg          | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+=========================================================================================
+Presto compilation completed successfully. (binaryGrayConverter)
+Information: Building the design 'outputModule'. (HDL-193)
+
+Inferred memory devices in process
+	in routine outputModule line 11 in file
+		'../01_RTL/outputModule.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  output_valid_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   output_data_reg   | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (outputModule)
+Information: Building the design 'initialPermutation'. (HDL-193)
+Presto compilation completed successfully. (initialPermutation)
+Information: Building the design 'desKeyScheduler'. (HDL-193)
+Warning:  ../01_RTL/desKeyScheduler.v:223: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/desKeyScheduler.v:228: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/desKeyScheduler.v:233: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/desKeyScheduler.v:238: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/desKeyScheduler.v:243: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/desKeyScheduler.v:259: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/desKeyScheduler.v:264: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/desKeyScheduler.v:269: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/desKeyScheduler.v:274: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/desKeyScheduler.v:279: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/desKeyScheduler.v:137: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 131 in file
+	'../01_RTL/desKeyScheduler.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           132            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 151 in file
+	'../01_RTL/desKeyScheduler.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           169            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 194 in file
+	'../01_RTL/desKeyScheduler.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           212            |    auto/auto     |
+|           214            |    auto/auto     |
+|           252            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine desKeyScheduler line 151 in file
+		'../01_RTL/desKeyScheduler.v'.
+======================================================================================
+|       Register Name        |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+======================================================================================
+|   key_reg_right_part_reg   | Flip-flop |  28   |  Y  | N  | Y  | N  | N  | N  | N  |
+| schedule_counter_value_reg | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   key_reg_left_part_reg    | Flip-flop |  28   |  Y  | N  | Y  | N  | N  | N  | N  |
+======================================================================================
+Presto compilation completed successfully. (desKeyScheduler)
+Information: Building the design 'desFfunction'. (HDL-193)
+Presto compilation completed successfully. (desFfunction)
+Information: Building the design 'finalPermutation'. (HDL-193)
+Presto compilation completed successfully. (finalPermutation)
+Information: Building the design 'crcUnit'. (HDL-193)
+Presto compilation completed successfully. (crcUnit)
+Information: Building the design 'binaryToGrayXor8bit'. (HDL-193)
+Presto compilation completed successfully. (binaryToGrayXor8bit)
+Information: Building the design 'grayToBinaryXorUnit'. (HDL-193)
+Presto compilation completed successfully. (grayToBinaryXorUnit)
+Information: Building the design 'pc1Permutation'. (HDL-193)
+Presto compilation completed successfully. (pc1Permutation)
+Information: Building the design 'circularLeftShifter1bit'. (HDL-193)
+Presto compilation completed successfully. (circularLeftShifter1bit)
+Information: Building the design 'circularLeftShifter2bit'. (HDL-193)
+Presto compilation completed successfully. (circularLeftShifter2bit)
+Information: Building the design 'circularRightShifter1bit'. (HDL-193)
+Presto compilation completed successfully. (circularRightShifter1bit)
+Information: Building the design 'circularRightShifter2bit'. (HDL-193)
+Presto compilation completed successfully. (circularRightShifter2bit)
+Information: Building the design 'pc2Permutation'. (HDL-193)
+Presto compilation completed successfully. (pc2Permutation)
+Information: Building the design 'roundExpander'. (HDL-193)
+Presto compilation completed successfully. (roundExpander)
+Information: Building the design 'sbox1'. (HDL-193)
+Warning:  ../01_RTL/desFfunction.v:281: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:302: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:324: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:346: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:350: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 261 in file
+	'../01_RTL/desFfunction.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           262            |    auto/auto     |
+|           264            |    auto/auto     |
+|           285            |    auto/auto     |
+|           307            |    auto/auto     |
+|           329            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (sbox1)
+Information: Building the design 'sbox2'. (HDL-193)
+Warning:  ../01_RTL/desFfunction.v:391: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:412: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:434: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:456: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:460: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 371 in file
+	'../01_RTL/desFfunction.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           372            |    auto/auto     |
+|           374            |    auto/auto     |
+|           395            |    auto/auto     |
+|           417            |    auto/auto     |
+|           439            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (sbox2)
+Information: Building the design 'sbox3'. (HDL-193)
+Warning:  ../01_RTL/desFfunction.v:499: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:521: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:543: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:565: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:569: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 479 in file
+	'../01_RTL/desFfunction.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           480            |    auto/auto     |
+|           482            |    auto/auto     |
+|           504            |    auto/auto     |
+|           526            |    auto/auto     |
+|           548            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (sbox3)
+Information: Building the design 'sbox4'. (HDL-193)
+Warning:  ../01_RTL/desFfunction.v:610: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:631: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:653: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:675: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:679: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 590 in file
+	'../01_RTL/desFfunction.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           591            |    auto/auto     |
+|           593            |    auto/auto     |
+|           614            |    auto/auto     |
+|           636            |    auto/auto     |
+|           658            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (sbox4)
+Information: Building the design 'sbox5'. (HDL-193)
+Warning:  ../01_RTL/desFfunction.v:719: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:740: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:761: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:782: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 699 in file
+	'../01_RTL/desFfunction.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           700            |    auto/auto     |
+|           702            |    auto/auto     |
+|           723            |    auto/auto     |
+|           744            |    auto/auto     |
+|           765            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (sbox5)
+Information: Building the design 'sbox6'. (HDL-193)
+Warning:  ../01_RTL/desFfunction.v:821: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:843: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:864: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:885: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 801 in file
+	'../01_RTL/desFfunction.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           802            |    auto/auto     |
+|           804            |    auto/auto     |
+|           826            |    auto/auto     |
+|           847            |    auto/auto     |
+|           868            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (sbox6)
+Information: Building the design 'sbox7'. (HDL-193)
+Warning:  ../01_RTL/desFfunction.v:925: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:946: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:968: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:990: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:994: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 905 in file
+	'../01_RTL/desFfunction.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           906            |    auto/auto     |
+|           908            |    auto/auto     |
+|           929            |    auto/auto     |
+|           951            |    auto/auto     |
+|           973            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (sbox7)
+Information: Building the design 'sbox8'. (HDL-193)
+Warning:  ../01_RTL/desFfunction.v:1033: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:1055: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:1077: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:1099: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/desFfunction.v:1103: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 1013 in file
+	'../01_RTL/desFfunction.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           1014           |    auto/auto     |
+|           1016           |    auto/auto     |
+|           1038           |    auto/auto     |
+|           1060           |    auto/auto     |
+|           1082           |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (sbox8)
+Information: Building the design 'roundPermutation'. (HDL-193)
+Presto compilation completed successfully. (roundPermutation)
+1
+current_design [get_designs $DESIGN]
+Current design is 'IOTDF'.
+{IOTDF}
+link
+
+  Linking design 'IOTDF'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (29 designs)              /home/raid7_2/user12/r2921a01/hw/hw4/1121_hw4/02_SYN/IOTDF.db, etc
+  slow (library)              /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+source -echo -verbose ./IOTDF_DC.sdc
+# operating conditions and boundary conditions #
+create_clock -name clk  -period 6.5   [get_ports  clk]      ;#Modify period by yourself
+1
+set_dont_touch_network      [all_clocks]
+1
+set_fix_hold                [all_clocks]
+1
+set_clock_uncertainty  0.1  [all_clocks]
+1
+set_clock_latency      1.0  [all_clocks]
+1
+set_ideal_network           [get_ports clk]
+1
+#Don't touch the basic env setting as below
+set_input_delay  -max 1.0   -clock clk [remove_from_collection [all_inputs]  {clk}]  
+1
+set_input_delay  -min 0.0   -clock clk [remove_from_collection [all_inputs]  {clk}] 
+1
+set_output_delay -max 1.0   -clock clk [all_outputs]
+1
+set_output_delay -min 0.0   -clock clk [all_outputs] 
+1
+set_load         0.01  [all_outputs]
+1
+set_drive        0.1   [all_inputs]
+1
+set_operating_conditions -max_library slow -max slow
+Using operating conditions 'slow' found in library 'slow'.
+1
+set_max_fanout 10 [all_inputs]
+1
+1
+# Compile Design
+current_design [get_designs ${DESIGN}]
+Current design is 'IOTDF'.
+{IOTDF}
+check_design > Report/check_design.txt
+check_timing > Report/check_timing.txt
+#set high_fanout_net_threshold 0
+uniquify
+Information: Uniquified 9 instances of design 'crcUnit'. (OPT-1056)
+Information: Uniquified 2 instances of design 'circularLeftShifter1bit'. (OPT-1056)
+Information: Uniquified 2 instances of design 'circularLeftShifter2bit'. (OPT-1056)
+Information: Uniquified 2 instances of design 'circularRightShifter1bit'. (OPT-1056)
+Information: Uniquified 2 instances of design 'circularRightShifter2bit'. (OPT-1056)
+1
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+set_clock_gating_style -pos integrated
+
+Current clock gating style....
+Sequential cell: latch
+Minimum bank bitwidth: 3
+Minimum bank bitwidth for enhanced clock gating: 6
+Maximum fanout: unlimited
+Setup time for clock gate: -
+Hold time for clock gate: -
+Clock gating circuitry (positive edge): integrated
+Clock gating circuitry (negative edge): or
+ Note: inverter between clock gating circuitry 
+       and (negative edge) register clock pin.
+Control point insertion: none
+Control signal for control point: scan_enable
+Observation point insertion: false
+Observation logic depth: 5
+1
+compile_ultra -retime -gate_clock
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | U-2022.12-DWBB_202212.0 |     *     |
+| Licensed DW Building Blocks        | U-2022.12-DWBB_202212.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Comand Line  | compile_ultra -retime -gate_clock                                                 |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 2702                                   |
+| Number of User Hierarchies                              | 40                                     |
+| Sequential Cell Count                                   | 863                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 748                                    |
+| Number of Dont Touch Nets                               | 7                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Information: There are 841 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'IOTDF'
+
+Loaded alib file './alib-52/slow.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy input_receiver_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy crc_module_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy output_module_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/init_perm before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/key_scheduler_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/des_f_function_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/final_permutation_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy crc_module_0/crc_unit_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy binary_gray_converter_0/bin_to_gray_xor8bit_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy binary_gray_converter_0/gray_to_bin_xor_unit_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy crc_module_0/crc_unit_generate[8].crc_unit_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy crc_module_0/crc_unit_generate[7].crc_unit_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy crc_module_0/crc_unit_generate[6].crc_unit_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy crc_module_0/crc_unit_generate[5].crc_unit_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy crc_module_0/crc_unit_generate[4].crc_unit_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy crc_module_0/crc_unit_generate[3].crc_unit_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy crc_module_0/crc_unit_generate[2].crc_unit_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy crc_module_0/crc_unit_generate[1].crc_unit_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/key_scheduler_0/pc1_permutation_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/key_scheduler_0/circular_left_shifter_1bit_for_left_part before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/key_scheduler_0/circular_left_shifter_2bit_for_left_part before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/key_scheduler_0/circular_right_shifter_1bit_for_left_part before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/key_scheduler_0/circular_right_shifter_2bit_for_left_part before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/key_scheduler_0/pc2_permutation_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/des_f_function_0/round_expander before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/des_f_function_0/sbox1_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/des_f_function_0/sbox2_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/des_f_function_0/sbox3_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/des_f_function_0/sbox4_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/des_f_function_0/sbox5_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/des_f_function_0/sbox6_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/des_f_function_0/sbox7_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/des_f_function_0/sbox8_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/des_f_function_0/round_permutation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/key_scheduler_0/circular_left_shifter_1bit_for_right_part before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/key_scheduler_0/circular_left_shifter_2bit_for_right_part before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/key_scheduler_0/circular_right_shifter_1bit_for_right_part before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy des_module_0/key_scheduler_0/circular_right_shifter_2bit_for_right_part before Pass 1 (OPT-776)
+Information: Ungrouping 39 of 67 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'IOTDF'
+Information: Added key list 'DesignWare' to design 'IOTDF'. (DDB-72)
+Information: The register 'input_receiver_0/cuerrent_state_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'input_receiver_0/cuerrent_state_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'input_receiver_0/cuerrent_state_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'crc_module_0/saved_data_reg_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'crc_module_0/saved_data_reg_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'crc_module_0/saved_data_reg_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'des_module_0/current_des_state_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'des_module_0/current_des_state_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'des_module_0/current_des_state_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cuerrent_state_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cuerrent_state_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cuerrent_state_reg[2]' is a constant and will be removed. (OPT-1206)
+  Processing 'binaryGrayConverter'
+Information: Added key list 'DesignWare' to design 'binaryGrayConverter'. (DDB-72)
+  Processing 'SNPS_CLOCK_GATE_HIGH_desKeyScheduler'
+  Mapping integrated clock gating circuitry
+  Processing 'SNPS_CLOCK_GATE_HIGH_crcModule'
+  Mapping integrated clock gating circuitry
+  Processing 'SNPS_CLOCK_GATE_HIGH_desModule_0'
+  Mapping integrated clock gating circuitry
+  Processing 'SNPS_CLOCK_GATE_HIGH_inputReceiver_0'
+  Mapping integrated clock gating circuitry
+  Processing 'SNPS_CLOCK_GATE_HIGH_IOTDF'
+  Mapping integrated clock gating circuitry
+  Processing 'SNPS_CLOCK_GATE_HIGH_binaryGrayConverter'
+  Mapping integrated clock gating circuitry
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_18, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_desModule_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_crcModule, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_desKeyScheduler, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_binaryGrayConverter, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_desModule_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_desModule_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_15, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_16, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_inputReceiver_17, since there are no registers. (PWR-806)
+Information: Performing clock-gating on design IOTDF. (PWR-730)
+Information: Performing clock-gating on design binaryGrayConverter. (PWR-730)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Ungrouping hierarchy binary_gray_converter_0 'binaryGrayConverter' #insts = 1084. (OPT-777)
+  Mapping Optimization (Phase 1)
+Information: In design 'IOTDF', the register 'input_receiver_0/cuerrent_state_reg[0]' is removed because it is merged to 'cuerrent_state_reg[0]'. (OPT-1215)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:24   67142.4      0.00       0.0       0.0                           55132704.0000      0.00  
+    0:00:24   67137.3      0.00       0.0       0.0                           55130792.0000      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:25   67137.3      0.00       0.0       0.0                           55130792.0000      0.00  
+    0:00:25   67137.3      0.00       0.0       0.0                           55130792.0000      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:28   48140.0      0.00       0.0       0.0                           38672280.0000      0.00  
+    0:00:28   48140.0      0.00       0.0       0.0                           38672280.0000      0.00  
+    0:00:28   48140.0      0.00       0.0       0.0                           38672280.0000      0.00  
+    0:00:29   48140.0      0.00       0.0       0.0                           38672280.0000      0.00  
+    0:00:29   48133.2      0.00       0.0       0.0                           38672432.0000      0.00  
+    0:00:30   48133.2      0.00       0.0       0.0                           38672432.0000      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:31   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:31   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:31   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           38228060.0000      0.00  
+    0:00:32   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:33   47741.1      0.00       0.0       0.0                           37827384.0000      0.00  
+    0:00:34   47680.0      0.00       0.0       0.0                           36916412.0000      0.00  
+    0:00:34   47680.0      0.00       0.0       0.0                           36916412.0000      0.00  
+    0:00:34   47680.0      0.00       0.0       0.0                           36916412.0000      0.00  
+    0:00:34   47680.0      0.00       0.0       0.0                           36912988.0000      0.00  
+    0:00:35   47668.1      0.00       0.0       0.0                           36819436.0000      0.00  
+    0:00:35   47668.1      0.00       0.0       0.0                           36819436.0000      0.00  
+    0:00:35   47668.1      0.00       0.0       0.0                           36819436.0000      0.00  
+    0:00:35   47668.1      0.00       0.0       0.0                           36819436.0000      0.00  
+    0:00:35   47668.1      0.00       0.0       0.0                           36819436.0000      0.00  
+    0:00:35   47668.1      0.00       0.0       0.0                           36819436.0000      0.00  
+Loading db file '/home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+# Report Output
+current_design [get_designs ${DESIGN}]
+Current design is 'IOTDF'.
+{IOTDF}
+report_timing > "./Report/${DESIGN}_syn.timing"
+report_area > "./Report/${DESIGN}_syn.area"
+report_qor > "./Report/${DESIGN}_syn.qor"
+report_clock_gating -gating_elements > "./Report/${DESIGN}_syn.gating_elements"
+report_clock_gating -ungated > "./Report/${DESIGN}_syn.ungated"
+all_high_fanout -net -threshold 500 > Report/all_high_fanout_greater_than_500.txt
+report_net_fanout -verbose -high_fanout > Report/report_net_fanout.txt
+# report_constraint -verbose > Report/report_constraint.txt
+# Output Design
+current_design [get_designs ${DESIGN}]
+Current design is 'IOTDF'.
+{IOTDF}
+set bus_inference_style {%s[%d]}
+%s[%d]
+set bus_naming_style {%s[%d]}
+%s[%d]
+set hdlout_internal_busses true
+true
+change_names -hierarchy -rule verilog
+1
+define_name_rules name_rule -allowed {a-z A-Z 0-9 _} -max_length 255 -type cell
+1
+define_name_rules name_rule -allowed {a-z A-Z 0-9 _[]} -max_length 255 -type net
+1
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
+1
+define_name_rules name_rule -case_insensitive
+1
+change_names -hierarchy -rules name_rule
+1
+remove_unconnected_ports -blast_buses [get_cells -hierarchical *]
+1
+set verilogout_higher_designs_first true
+true
+write -format ddc     -hierarchy -output "./Netlist/${DESIGN}_syn.ddc"
+Writing ddc file './Netlist/IOTDF_syn.ddc'.
+1
+write -format verilog -hierarchy -output "./Netlist/${DESIGN}_syn.v"
+Writing verilog file '/home/raid7_2/user12/r2921a01/hw/hw4/1121_hw4/02_SYN/Netlist/IOTDF_syn.v'.
+1
+write_sdf -version 2.1  -context verilog -load_delay cell ./Netlist/${DESIGN}_syn.sdf
+Information: Writing timing information to file '/home/raid7_2/user12/r2921a01/hw/hw4/1121_hw4/02_SYN/Netlist/IOTDF_syn.sdf'. (WT-3)
+1
+write_sdc  ./Netlist/${DESIGN}_syn.sdc -version 1.8
+1
+report_timing
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IOTDF
+Version: U-2022.12
+Date   : Mon Nov 13 22:51:36 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: binary_gray_converter_0_converter_round_counter_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: output_module_0_output_data_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  binary_gray_converter_0_converter_round_counter_reg_2_/CK (DFFRX1)
+                                                          0.00       1.00 r
+  binary_gray_converter_0_converter_round_counter_reg_2_/Q (DFFRX1)
+                                                          0.52       1.52 f
+  U1822/Y (NOR2XL)                                        0.37       1.89 r
+  U2592/Y (NOR2BX1)                                       0.23       2.12 r
+  U1837/Y (NAND2XL)                                       0.38       2.51 f
+  U1793/Y (INVXL)                                         0.67       3.18 r
+  U2567/Y (NAND2XL)                                       0.10       3.28 f
+  U2552/Y (OAI211XL)                                      0.15       3.43 r
+  U1813/Y (NOR4XL)                                        0.17       3.59 f
+  U2691/Y (AOI2BB2X1)                                     0.28       3.87 f
+  U2692/Y (AOI2BB2X1)                                     0.30       4.17 f
+  U2712/Y (AOI2BB2X1)                                     0.28       4.45 f
+  U2743/Y (AOI2BB2X1)                                     0.29       4.74 f
+  U2769/Y (AOI2BB2X1)                                     0.28       5.02 f
+  U2616/Y (AOI2BB2X1)                                     0.29       5.32 f
+  U2832/Y (AOI2BB2X1)                                     0.29       5.60 f
+  U2861/Y (AOI2BB2X1)                                     0.28       5.88 f
+  U3680/Y (AO22X1)                                        0.32       6.21 f
+  U3683/Y (AOI222XL)                                      0.32       6.53 r
+  U1926/Y (INVXL)                                         0.06       6.59 f
+  output_module_0_output_data_reg_0_/D (DFFRX1)           0.00       6.59 f
+  data arrival time                                                  6.59
+
+  clock clk (rise edge)                                   6.50       6.50
+  clock network delay (ideal)                             1.00       7.50
+  clock uncertainty                                      -0.10       7.40
+  output_module_0_output_data_reg_0_/CK (DFFRX1)          0.00       7.40 r
+  library setup time                                     -0.21       7.19
+  data required time                                                 7.19
+  --------------------------------------------------------------------------
+  data required time                                                 7.19
+  data arrival time                                                 -6.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+1
+report_area
+ 
+****************************************
+Report : area
+Design : IOTDF
+Version: U-2022.12
+Date   : Mon Nov 13 22:51:36 2023
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db)
+
+Number of ports:                          213
+Number of nets:                          3697
+Number of cells:                         3519
+Number of combinational cells:           2622
+Number of sequential cells:               873
+Number of macros/black boxes:               0
+Number of buf/inv:                        141
+Number of references:                      84
+
+Combinational area:              19825.631889
+Buf/Inv area:                      539.773190
+Noncombinational area:           27842.451273
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 47668.083162
+Total area:                 undefined
+1
+check_design
+1
+exit
+
+Memory usage for this session 216 Mbytes.
+Memory usage for this session including child processes 240 Mbytes.
+CPU usage for this session 48 seconds ( 0.01 hours ).
+Elapsed time for this session 55 seconds ( 0.02 hours ).
+
+Thank you...

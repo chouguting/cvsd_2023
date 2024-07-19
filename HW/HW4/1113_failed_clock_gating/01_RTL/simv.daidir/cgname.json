@@ -1,0 +1,188 @@
+{
+    "test": [
+        "test",
+        "x9Hvb",
+        "module",
+        4
+    ],
+    "IOTDF": [
+        "IOTDF",
+        "KiWyN",
+        "module",
+        11
+    ],
+    "inputReceiver": [
+        "inputReceiver",
+        "QcdG7",
+        "module",
+        8
+    ],
+    "desModule": [
+        "desModule",
+        "QTJt4",
+        "module",
+        12
+    ],
+    "initialPermutation": [
+        "initialPermutation",
+        "vpS42",
+        "module",
+        13
+    ],
+    "finalPermutation": [
+        "finalPermutation",
+        "PZgp1",
+        "module",
+        2
+    ],
+    "desKeyScheduler": [
+        "desKeyScheduler",
+        "mNmmK",
+        "module",
+        14
+    ],
+    "circularLeftShifter1bit": [
+        "circularLeftShifter1bit",
+        "z8cyg",
+        "module",
+        15
+    ],
+    "circularLeftShifter2bit": [
+        "circularLeftShifter2bit",
+        "fnN6Y",
+        "module",
+        16
+    ],
+    "circularRightShifter1bit": [
+        "circularRightShifter1bit",
+        "SQHd9",
+        "module",
+        17
+    ],
+    "circularRightShifter2bit": [
+        "circularRightShifter2bit",
+        "NeCyQ",
+        "module",
+        18
+    ],
+    "pc1Permutation": [
+        "pc1Permutation",
+        "Hyz3Z",
+        "module",
+        19
+    ],
+    "pc2Permutation": [
+        "pc2Permutation",
+        "aJJwj",
+        "module",
+        20
+    ],
+    "desFfunction": [
+        "desFfunction",
+        "aJETL",
+        "module",
+        21
+    ],
+    "roundExpander": [
+        "roundExpander",
+        "jL9Pj",
+        "module",
+        22
+    ],
+    "roundPermutation": [
+        "roundPermutation",
+        "uBzn3",
+        "module",
+        7
+    ],
+    "sbox1": [
+        "sbox1",
+        "LL0GI",
+        "module",
+        23
+    ],
+    "sbox2": [
+        "sbox2",
+        "QIgNU",
+        "module",
+        24
+    ],
+    "sbox3": [
+        "sbox3",
+        "F4WQr",
+        "module",
+        25
+    ],
+    "sbox4": [
+        "sbox4",
+        "Tfep5",
+        "module",
+        26
+    ],
+    "sbox5": [
+        "sbox5",
+        "c72rn",
+        "module",
+        27
+    ],
+    "sbox6": [
+        "sbox6",
+        "P2wcs",
+        "module",
+        28
+    ],
+    "sbox7": [
+        "sbox7",
+        "cCbCh",
+        "module",
+        29
+    ],
+    "sbox8": [
+        "sbox8",
+        "qWKaC",
+        "module",
+        5
+    ],
+    "outputModule": [
+        "outputModule",
+        "L9c3q",
+        "module",
+        30
+    ],
+    "crcModule_0000": [
+        "crcModule_0000",
+        "dzhk7",
+        "module",
+        6
+    ],
+    "crcUnit": [
+        "crcUnit",
+        "NWxuD",
+        "module",
+        9
+    ],
+    "binaryGrayConverter": [
+        "binaryGrayConverter",
+        "Dz08V",
+        "module",
+        10
+    ],
+    "binaryToGrayXor8bit": [
+        "binaryToGrayXor8bit",
+        "RD9rc",
+        "module",
+        31
+    ],
+    "grayToBinaryXorUnit": [
+        "grayToBinaryXorUnit",
+        "xgvQd",
+        "module",
+        32
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        3
+    ]
+}

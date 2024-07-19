@@ -1,0 +1,32 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        4
+    ],
+    "testbed": [
+        "testbed",
+        "yIsE3",
+        "module",
+        3
+    ],
+    "sram_256x8": [
+        "sram_256x8",
+        "ezBWG",
+        "module",
+        5
+    ],
+    "convolutionEngine": [
+        "convolutionEngine",
+        "kE9cx",
+        "module",
+        6
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        2
+    ]
+}

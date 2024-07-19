@@ -1,0 +1,4 @@
+dc_shell-t -f syn.tcl | tee syn.log
+rm -f *.syn
+rm -f *.pvl
+rm -f *.mr

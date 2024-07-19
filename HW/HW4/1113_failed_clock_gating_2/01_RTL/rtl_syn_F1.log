@@ -1,0 +1,175 @@
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Mon Nov 13 23:03:06 2023
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '../00_TESTBED/testfixture.v'
+Parsing design file './IOTDF.v'
+Parsing design file './inputReceiver.v'
+Parsing design file './desModule.v'
+Parsing design file './desKeyScheduler.v'
+Parsing design file './desFfunction.v'
+Parsing design file './outputModule.v'
+Parsing design file './crcModule.v'
+Parsing design file './binaryGrayConverter.v'
+Top Level Modules:
+       test
+TimeScale is 1 ns / 10 ps
+
+   ***   $sdf_annotate() version 1.2R
+
+Warning-[SDFCOM_CNOF] Cannot Open File
+  SDF Error: Cannot open SDF file ./IOTDF_syn.sdf for reading.      
+  No such file or directory.
+
+
+          Total errors: 1
+          Total warnings: 0
+   ***    SDF annotation aborted: Mon Nov 13 23:03:06 2023
+
+
+Starting vcs inline pass...
+30 modules and 0 UDP read.
+recompiling module test
+recompiling module IOTDF
+recompiling module inputReceiver
+recompiling module desModule
+recompiling module initialPermutation
+recompiling module finalPermutation
+recompiling module desKeyScheduler
+recompiling module circularLeftShifter1bit
+recompiling module circularLeftShifter2bit
+recompiling module circularRightShifter1bit
+recompiling module circularRightShifter2bit
+recompiling module pc1Permutation
+recompiling module pc2Permutation
+recompiling module desFfunction
+recompiling module roundExpander
+recompiling module roundPermutation
+recompiling module sbox1
+recompiling module sbox2
+recompiling module sbox3
+recompiling module sbox4
+recompiling module sbox5
+recompiling module sbox6
+recompiling module sbox7
+recompiling module sbox8
+recompiling module outputModule
+recompiling module crcModule
+recompiling module crcUnit
+recompiling module binaryGrayConverter
+recompiling module binaryToGrayXor8bit
+recompiling module grayToBinaryXorUnit
+All of 30 modules done
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o  _23998_archive_1.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive       _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Nov 13 23:03 2023
+*Verdi* Loading libsscore_vcs202206.so
+FSDB Dumper for VCS, Release Verdi_T-2022.06, Linux x86_64/64bit, 05/29/2022
+(C) 1996 - 2022 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'IOTDF_F1.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+-----------------------------------------------------
+
+Start to Send IOT Data & Compare ...
+
+
+P00:  ** Correct!! ** , iot_out=3a9f9888c5d071bc8f7a4bf8e1db3442
+P01:  ** Correct!! ** , iot_out=a6d149525dc08c2f84d82169c9c76bf7
+P02:  ** Correct!! ** , iot_out=4a1fbbafb3c42aa0bb4fc1eed9586b31
+P03:  ** Correct!! ** , iot_out=537f21ed7cc54a97add960efc6066f45
+P04:  ** Correct!! ** , iot_out=38be19388eab711df4b8010a4666024c
+P05:  ** Correct!! ** , iot_out=2b07282ada05848ad5ac1ced2c003038
+P06:  ** Correct!! ** , iot_out=ae7e686fecbb21ffba1a84bf726ef9fe
+P07:  ** Correct!! ** , iot_out=721ca0057695b23bfa56fd8e97cffa57
+P08:  ** Correct!! ** , iot_out=0ce507ffd75aeb9d6ae210826ef0004d
+P09:  ** Correct!! ** , iot_out=044ddfc6ef0c69908352c9a1a9d201ae
+P10:  ** Correct!! ** , iot_out=be9e5e77216f88792d55ee4b747ab470
+P11:  ** Correct!! ** , iot_out=dd3104c32d3b375862a705c91aee4bf2
+P12:  ** Correct!! ** , iot_out=026b438644806f755a3e4c27bbac782b
+P13:  ** Correct!! ** , iot_out=675d73c008604d87064b3243e7e55a69
+P14:  ** Correct!! ** , iot_out=e7803dd51f9a84384edfb5fc7875fd0a
+P15:  ** Correct!! ** , iot_out=951223cdfcf3aa897bac223d3efe2642
+P16:  ** Correct!! ** , iot_out=6c184cbca58e98fff7f7f409e0755e95
+P17:  ** Correct!! ** , iot_out=2a8527a63d6d40cbc5d564dd343837cf
+P18:  ** Correct!! ** , iot_out=5e14130a374d9d9ecd31128e40f8ae18
+P19:  ** Correct!! ** , iot_out=3f7691acd98db672c370047deedd6f5d
+P20:  ** Correct!! ** , iot_out=2730ba15911524329be2b31408667d07
+P21:  ** Correct!! ** , iot_out=e137e683ba7bba8695c307060502bd4c
+P22:  ** Correct!! ** , iot_out=b37eb45a074f78529100f8f833ae31b9
+P23:  ** Correct!! ** , iot_out=b5b9dc80284634635ea2fcc7d9e99d55
+P24:  ** Correct!! ** , iot_out=50a09dfc5ba17b4bc2099a78893219fa
+P25:  ** Correct!! ** , iot_out=8f7b5044cdd33fc8676d7b6b3b32c158
+P26:  ** Correct!! ** , iot_out=b22d7e22c5a95160c8949c5baf9da5fb
+P27:  ** Correct!! ** , iot_out=6e5d7698e0b05ec0e0673c92d265170a
+P28:  ** Correct!! ** , iot_out=83dac7b1100d4baf2411b94e6558e10b
+P29:  ** Correct!! ** , iot_out=f87e8124eac87c52d677a8985eb8e9d5
+P30:  ** Correct!! ** , iot_out=6057e920434a2c470d7e7699fb2a355c
+P31:  ** Correct!! ** , iot_out=f41e1af41ec3e6192b06e7fb95a04c2f
+P32:  ** Correct!! ** , iot_out=31c42b91e9f6aaebc5859c6393699aee
+P33:  ** Correct!! ** , iot_out=7c69636a4463c94dfbaf914444b36878
+P34:  ** Correct!! ** , iot_out=642d15e227e03c084723b72228451353
+P35:  ** Correct!! ** , iot_out=4cfb85341c44dcfb0c13d1867869cbaf
+P36:  ** Correct!! ** , iot_out=794f67cf0b04ed575df0d301b33a1373
+P37:  ** Correct!! ** , iot_out=4f6ca4e7cc030fe7ab1bd72f2017b811
+P38:  ** Correct!! ** , iot_out=1bac692ee168093bddf56c6d73d2f5ef
+P39:  ** Correct!! ** , iot_out=e3785b558e93b121a384c2811b1d53c6
+P40:  ** Correct!! ** , iot_out=cd1b429f574c0ef66fd2cf92d259cde9
+P41:  ** Correct!! ** , iot_out=243f4262aa7327c54f42531113a601b9
+P42:  ** Correct!! ** , iot_out=1783c43a6ae66267bce79f0afb5932f1
+P43:  ** Correct!! ** , iot_out=4a392c0931f19039ac474160086e20ca
+P44:  ** Correct!! ** , iot_out=8e00cb8866d5418fc5b76300509d924b
+P45:  ** Correct!! ** , iot_out=692c90053de77662009877d15838c035
+P46:  ** Correct!! ** , iot_out=d28dcd5f063748ad0fdfe79f76aeb2d6
+P47:  ** Correct!! ** , iot_out=2c2c9c800b7c955c934db6c0536c62c6
+P48:  ** Correct!! ** , iot_out=1fd080e918c934d9279b4e5f57aebb4c
+P49:  ** Correct!! ** , iot_out=aa174d6e1a26d668bc1bb7c1013ce565
+P50:  ** Correct!! ** , iot_out=1e595b4ff807979a670a1190168db8a0
+P51:  ** Correct!! ** , iot_out=354858c0a001322277028a5abf70d69a
+P52:  ** Correct!! ** , iot_out=54241ae1b5aa622f831675ae2e498ae1
+P53:  ** Correct!! ** , iot_out=e37c1989a8fc0cf29a2ca0a4e3a2f7b3
+P54:  ** Correct!! ** , iot_out=bfcab1da1027245b9661a7a7008286f9
+P55:  ** Correct!! ** , iot_out=4f767ba1adb71f94c8fb1345d137a58f
+P56:  ** Correct!! ** , iot_out=1a8e5ea79f4b656e55686cedcf47d37b
+P57:  ** Correct!! ** , iot_out=e2d7c49ad64e0a11b895fc5a1f08b7b5
+P58:  ** Correct!! ** , iot_out=12cad57a543ff9929f59ee6a6e7d4509
+P59:  ** Correct!! ** , iot_out=323ebd4b7832c2dde1202bfabf121766
+
+-----------------------------------------------------
+
+Congratulations! All data have been generated successfully!
+
+Total cost time:    6383.00 ns
+-------------------------PASS------------------------
+
+$finish called from file "../00_TESTBED/testfixture.v", line 302.
+$finish at simulation time               638300
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 6383000 ps
+CPU Time:      0.730 seconds;       Data structure size:   0.0Mb
+Mon Nov 13 23:03:12 2023
+CPU time: 1.114 seconds to compile + .462 seconds to elab + .755 seconds to link + .774 seconds in simulation

@@ -1,0 +1,342 @@
+ 
+****************************************
+Report : clock_gating
+        -ungated
+Design : IOTDF
+Version: U-2022.12
+Date   : Mon Nov 13 23:46:40 2023
+****************************************
+
+Information: Identification of clock-gating cells has not been performed. Pre-existing clock-gating cells will not be reported. (PWR-947)
+
+--------------------------------------------------------------------------------
+                             Ungated Register Report
+--------------------------------------------------------------------------------
+           Ungated Register     |  Reason                  |  What Next?
+--------------------------------------------------------------------------------
+    cuerrent_state_reg[0]       |  Min bitwidth not met    |  -
+    input_receiver_0/cuerrent_state_reg[0]
+                                |  Min bitwidth not met    |  -
+    input_receiver_0/save_to_input_128_reg_reg
+                                |  Always enabled register |  -
+    input_receiver_0/received_data_valid_reg
+                                |  Always enabled register |  -
+    des_module_0/current_des_state_reg[0]
+                                |  Min bitwidth not met    |  -
+    des_module_0/current_des_state_reg[1]
+                                |  Min bitwidth not met    |  -
+    crc_module_0/current_state_reg[1]
+                                |  Min bitwidth not met    |  -
+    crc_module_0/current_state_reg[0]
+                                |  Min bitwidth not met    |  -
+    binary_gray_converter_0/current_state_reg[1]
+                                |  Min bitwidth not met    |  -
+    binary_gray_converter_0/current_state_reg[0]
+                                |  Min bitwidth not met    |  -
+    output_module_0/output_valid_reg
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[2]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[127]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[126]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[125]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[124]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[123]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[122]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[121]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[120]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[119]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[118]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[117]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[116]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[115]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[114]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[113]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[112]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[111]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[110]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[109]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[108]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[107]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[106]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[105]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[104]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[103]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[102]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[101]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[100]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[99]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[98]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[97]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[96]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[95]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[94]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[93]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[92]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[91]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[90]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[89]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[88]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[87]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[86]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[85]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[84]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[83]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[82]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[81]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[80]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[79]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[78]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[77]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[76]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[75]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[74]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[73]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[72]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[71]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[70]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[69]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[68]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[67]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[66]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[65]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[64]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[63]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[62]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[61]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[60]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[59]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[58]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[57]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[56]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[55]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[54]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[53]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[52]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[51]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[50]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[49]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[48]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[47]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[46]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[45]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[44]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[43]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[42]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[41]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[40]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[39]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[38]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[37]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[36]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[35]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[34]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[33]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[32]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[31]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[30]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[29]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[28]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[27]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[26]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[25]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[24]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[23]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[22]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[21]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[20]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[19]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[18]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[17]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[16]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[15]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[14]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[13]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[12]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[11]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[10]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[9]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[8]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[7]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[6]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[5]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[4]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[3]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[1]
+                                |  Always enabled register |  -
+    output_module_0/output_data_reg[0]
+                                |  Always enabled register |  -
+                                |                          |
+--------------------------------------------------------------------------------
+
+---------------------------------------------------------------
+  Tool-inserted ungated reasons
+---------------------------------------------------------------
+  Reason for not gating    | Regs  |  Regs %  | Bits |  Bits %
+---------------------------------------------------------------
+  Always enabled register  | 131   |  94.24   | 131  |  94.24
+  Min bitwidth not met     | 8     |  5.76    | 8    |  5.76
+---------------------------------------------------------------
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |       23         |
+          |                                       |                  |
+          |    Number of Gated registers          |   712 (83.67%)   |
+          |                                       |                  |
+          |    Number of Ungated registers        |   139 (16.33%)   |
+          |                                       |                  |
+          |    Total number of registers          |      851         |
+          ------------------------------------------------------------
+
+
+
+                             Clock Gating Report by Origin
+          +-------------------------------------------------+------------------+
+          |                                                 |    Actual (%)    |
+          |                                                 |    Count         |
+          +-------------------------------------------------+------------------+
+          |  Number of tool-inserted clock gating elements  |    23 (100.00%)  |
+          |                                                 |                  |
+          |  Number of pre-existing clock gating elements   |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of gated registers                      |   712 (83.67%)   |
+          |                                                 |                  |
+          |  Number of tool-inserted gated registers        |   712 (83.67%)   |
+          |                                                 |                  |
+          |  Number of pre-existing gated registers         |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of ungated registers                    |   139 (16.33%)   |
+          |                                                 |                  |
+          |  Number of registers                            |      851         |
+          +-------------------------------------------------+------------------+
+
+
+
+1

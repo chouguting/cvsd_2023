@@ -1,0 +1,184 @@
+Magic 271485
+Revision Verdi_T-2022.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 8 31 1920 1009 375 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/raid7_2/user12/r2921a01/hw/hw4/1121_hw4/01_RTL/test_input.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 9124.944753 25923.138503
+cursor 23938.00374827158
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 7
+; marker line index
+markerPos 19
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/raid7_2/user12/r2921a01/hw/hw4/1121_hw4/01_RTL/test_input.fsdb"
+addSignal -h 15 /test/u_IOTDF/crc_module_0/clk
+addSignal -h 15 -holdScope crc_start
+addSignal -h 15 -holdScope reset_saved_data_reg
+addSignal -h 15 -holdScope save_to_saved_data_reg
+addSignal -h 15 -UNSIGNED -HEX -holdScope current_state[1:0]
+addSignal -h 15 -holdScope reset_remainder_reg
+addSignal -h 15 -holdScope save_to_remainder_reg
+addSignal -expanded -h 15 -UNSIGNED -HEX -holdScope saved_remainder_reg[0:3]
+addSignal -h 15 -holdScope count_crc_round_counter
+addSignal -h 15 -holdScope crc_data_in_source_select
+addSignal -h 15 -UNSIGNED -HEX -holdScope crc_out_data[127:0]
+addSignal -h 15 -holdScope crc_out_valid
+addSignal -h 15 -UNSIGNED -UDEC -holdScope crc_round_counter[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope data_in[127:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope crc_unit_data_in_first_iteration[8:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope crc_unit_data_in_after_first_iteration[8:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope crc_unit_data_in[8:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope saved_data_reg[121:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope saved_remainder_reg[0:3]
+addGroup "crc_2"
+addSignal -h 15 /test/u_IOTDF/crc_module_0/genblk1[2]/crc_unit_0/unit_data_in
+addSignal -h 15 -holdScope unit_data_pass_out
+addSignal -h 15 -holdScope first_position_in
+addSignal -h 15 -holdScope first_position_out
+addSignal -h 15 -holdScope second_position_in
+addSignal -h 15 -holdScope second_position_out
+addSignal -h 15 -holdScope third_position_in
+addSignal -h 15 -holdScope third_position_out
+addSignal -h 15 -holdScope fourth_position_in
+addGroup "crc_3"
+addSignal -h 15 /test/u_IOTDF/crc_module_0/genblk1[3]/crc_unit_0/unit_data_in
+addSignal -h 15 -holdScope unit_data_pass_out
+addSignal -h 15 -holdScope first_position_in
+addSignal -h 15 -holdScope first_position_out
+addSignal -h 15 -holdScope second_position_in
+addSignal -h 15 -holdScope second_position_out
+addSignal -h 15 -holdScope third_position_in
+addSignal -h 15 -holdScope third_position_out
+addSignal -h 15 -holdScope fourth_position_in
+addGroup "crc_5"
+addSignal -h 15 /test/u_IOTDF/crc_module_0/genblk1[5]/crc_unit_0/unit_data_in
+addSignal -h 15 -holdScope unit_data_pass_out
+addSignal -h 15 -holdScope first_position_in
+addSignal -h 15 -holdScope first_position_out
+addSignal -h 15 -holdScope second_position_in
+addSignal -h 15 -holdScope second_position_out
+addSignal -h 15 -holdScope third_position_in
+addSignal -h 15 -holdScope third_position_out
+addSignal -h 15 -holdScope fourth_position_in
+addGroup "crc_6"
+addSignal -h 15 /test/u_IOTDF/crc_module_0/genblk1[6]/crc_unit_0/unit_data_in
+addSignal -h 15 -holdScope unit_data_pass_out
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope first_position_in
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope first_position_out
+addSignal -h 15 -holdScope second_position_in
+addSignal -h 15 -holdScope second_position_out
+addSignal -h 15 -holdScope third_position_in
+addSignal -h 15 -holdScope third_position_out
+addSignal -h 15 -holdScope fourth_position_in
+addGroup "crc_7"
+addSignal -h 15 /test/u_IOTDF/crc_module_0/genblk1[7]/crc_unit_0/unit_data_in
+addSignal -h 15 -holdScope unit_data_pass_out
+addSignal -h 15 -holdScope first_position_in
+addSignal -h 15 -holdScope first_position_out
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope second_position_in
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope second_position_out
+addSignal -h 15 -holdScope third_position_in
+addSignal -h 15 -holdScope third_position_out
+addSignal -h 15 -holdScope fourth_position_in
+addGroup "crc_8"
+addSignal -h 15 /test/u_IOTDF/crc_module_0/genblk1[8]/crc_unit_0/unit_data_in
+addSignal -h 15 -holdScope unit_data_pass_out
+addSignal -h 15 -holdScope first_position_in
+addSignal -h 15 -holdScope first_position_out
+addSignal -h 15 -holdScope second_position_in
+addSignal -h 15 -holdScope second_position_out
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope third_position_in
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 -holdScope third_position_out
+addSignal -h 15 -holdScope fourth_position_in
+addGroup "G8"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/raid7_2/user12/r2921a01/hw/hw4/1121_hw4/01_RTL/test_input.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/test"
+"/test/u_IOTDF"
+"/test/u_IOTDF/crc_module_0"
+"/test/u_IOTDF/crc_module_0/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[1]"
+"/test/u_IOTDF/crc_module_0/genblk1[1]/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[2]"
+"/test/u_IOTDF/crc_module_0/genblk1[2]/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[3]"
+"/test/u_IOTDF/crc_module_0/genblk1[3]/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[4]"
+"/test/u_IOTDF/crc_module_0/genblk1[4]/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[5]"
+"/test/u_IOTDF/crc_module_0/genblk1[5]/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[6]"
+"/test/u_IOTDF/crc_module_0/genblk1[6]/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[7]"
+"/test/u_IOTDF/crc_module_0/genblk1[7]/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[8]"
+"/test/u_IOTDF/crc_module_0/genblk1[8]/crc_unit_0"
+
+SCOPE_LIST_BEGIN
+"/test"
+"/test/u_IOTDF/crc_module_0"
+"/test/u_IOTDF"
+"/test/u_IOTDF/crc_module_0/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[1]"
+"/test/u_IOTDF/crc_module_0/genblk1[1]/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[2]"
+"/test/u_IOTDF/crc_module_0/genblk1[2]/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[3]/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[4]/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[3]"
+"/test/u_IOTDF/crc_module_0/genblk1[4]"
+"/test/u_IOTDF/crc_module_0/genblk1[5]/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[6]/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[7]/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[8]/crc_unit_0"
+"/test/u_IOTDF/crc_module_0/genblk1[5]"
+"/test/u_IOTDF/crc_module_0/genblk1[6]"
+"/test/u_IOTDF/crc_module_0/genblk1[7]"
+"/test/u_IOTDF/crc_module_0/genblk1[8]"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

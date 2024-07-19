@@ -1,0 +1,9 @@
+0 flist.v
+    1 ./IOTDF.v
+    2 ./inputReceiver.v
+    3 ./desModule.v
+    4 ./desKeyScheduler.v
+    5 ./desFfunction.v
+    6 ./outputModule.v
+    7 ./crcModule.v
+    8 ./binaryGrayConverter.v

@@ -1,0 +1,50 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        4
+    ],
+    "testbed": [
+        "testbed",
+        "yIsE3",
+        "module",
+        1
+    ],
+    "sram_256x8": [
+        "sram_256x8",
+        "ezBWG",
+        "module",
+        5
+    ],
+    "convolutionEngine_0000": [
+        "convolutionEngine_0000",
+        "byNkB",
+        "module",
+        6
+    ],
+    "medianFinder": [
+        "medianFinder",
+        "hnush",
+        "module",
+        7
+    ],
+    "ComparatorSorter": [
+        "ComparatorSorter",
+        "wSW06",
+        "module",
+        8
+    ],
+    "arctangentApproximator": [
+        "arctangentApproximator",
+        "nzuek",
+        "module",
+        3
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        2
+    ]
+}

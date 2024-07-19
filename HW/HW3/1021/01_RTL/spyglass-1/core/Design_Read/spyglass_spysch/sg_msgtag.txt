@@ -1,0 +1,30 @@
+4 "WarnAnalyzeBBox" 2
+"BBoxEng"
+["sram_256x8","BB_NO_FUNC_VIEW"]
+"BBoxEngAuxiInfo"
+["(null)","(null)","(null)"]
+-1 "AutoGenerateSglib" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"
+-1 "DetectTopDesignUnits" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"
+-1 "ElabSummary" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"
+-1 "WRN_38" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"
+-1 "WarnAnalyzeBBox" 2
+"RULEGROUP"
+["Blackbox Resolution"]
+"BUILTIN"
+"1"

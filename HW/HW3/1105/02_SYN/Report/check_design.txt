@@ -1,0 +1,78 @@
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12
+Date:        Mon Nov  6 01:27:37 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      4
+    Feedthrough (LINT-29)                                           4
+
+Cells                                                              53
+    Cells do not drive (LINT-1)                                    53
+
+Nets                                                                1
+    Unloaded nets (LINT-2)                                          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'core', cell 'C1600' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C1609' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C1618' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C1621' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C1624' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C1628' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C1631' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C1635' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C1638' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C1642' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C1806' does not drive any nets. (LINT-1)
+Warning: In design 'memoryManagementUnit', cell 'C1262' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'B_101' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'B_102' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'B_103' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C10557' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'B_108' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'B_110' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'B_112' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'B_114' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'B_116' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'B_118' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'B_120' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'B_122' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C10941' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C10947' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C10961' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C10964' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C10967' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C10970' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C10973' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C10976' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11049' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11069' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11088' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11111' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11199' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11202' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11205' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11271' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11274' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11277' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11343' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11346' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11349' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11415' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11418' does not drive any nets. (LINT-1)
+Warning: In design 'convolutionEngine', cell 'C11421' does not drive any nets. (LINT-1)
+Warning: In design 'indexConverter', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'indexConverter', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'arctangentApproximator', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'arctangentApproximator', cell 'B_5' does not drive any nets. (LINT-1)
+Warning: In design 'arctangentApproximator', cell 'B_6' does not drive any nets. (LINT-1)
+Warning: In design 'core', net 'mmu0/index_converter_bank_select' driven by pin 'mmu0/iConv0/o_bank_select' has no loads. (LINT-2)
+Warning: In design 'indexConverter', input port 'i_channel[3]' is connected directly to output port 'o_sram_select[3]'. (LINT-29)
+Warning: In design 'indexConverter', input port 'i_channel[2]' is connected directly to output port 'o_sram_select[2]'. (LINT-29)
+Warning: In design 'indexConverter', input port 'i_channel[1]' is connected directly to output port 'o_sram_select[1]'. (LINT-29)
+Warning: In design 'indexConverter', input port 'i_channel[0]' is connected directly to output port 'o_sram_select[0]'. (LINT-29)
+1

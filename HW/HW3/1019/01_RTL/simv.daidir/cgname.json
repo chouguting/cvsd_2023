@@ -1,0 +1,20 @@
+{
+    "test_sram_write": [
+        "test_sram_write",
+        "kRFfZ",
+        "module",
+        1
+    ],
+    "sram_256x8": [
+        "sram_256x8",
+        "ezBWG",
+        "module",
+        4
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        2
+    ]
+}

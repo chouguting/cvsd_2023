@@ -1,0 +1,26 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        3
+    ],
+    "testbed": [
+        "testbed",
+        "yIsE3",
+        "module",
+        5
+    ],
+    "sram_256x8": [
+        "sram_256x8",
+        "ezBWG",
+        "module",
+        4
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        2
+    ]
+}

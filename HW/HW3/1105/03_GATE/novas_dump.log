@@ -1,0 +1,565 @@
+#######################################################################################
+# log primitive debug message of FSDB dumping                                         #
+# This is for R&D to analyze when there are issues happening when FSDB dump           #
+#######################################################################################
+ANF: vcsd_get_serial_mode_status('simv: undefined symbol: vcsd_get_serial_mode_status')
+ANF: vcsd_enable_sva_success_callback('simv: undefined symbol: vcsd_enable_sva_success_callback')
+ANF: vcsd_disable_sva_success_callback('simv: undefined symbol: vcsd_disable_sva_success_callback')
+ANF: vcsd_get_power_scope_name('simv: undefined symbol: vcsd_get_power_scope_name')
+ANF: vcsd_begin_no_value_var_info('simv: undefined symbol: vcsd_begin_no_value_var_info')
+ANF: vcsd_end_no_value_var_info('simv: undefined symbol: vcsd_end_no_value_var_info')
+ANF: vcsd_remove_xprop_merge_mode_callback('simv: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
+ANF: vhpi_get_cb_info('simv: undefined symbol: vhpi_get_cb_info')
+ANF: vhpi_free_handle('simv: undefined symbol: vhpi_free_handle')
+ANF: vhpi_fetch_vcsd_handle('simv: undefined symbol: vhpi_fetch_vcsd_handle')
+ANF: vhpi_fetch_vpi_handle('simv: undefined symbol: vhpi_fetch_vpi_handle')
+ANF: vhpi_has_verilog_parent('simv: undefined symbol: vhpi_has_verilog_parent')
+ANF: vhpi_is_verilog_scope('simv: undefined symbol: vhpi_is_verilog_scope')
+ANF: scsd_xprop_is_enabled('simv: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted('simv: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue('simv: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue('simv: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue('simv: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: scsd_xprop_register_merge_mode_cb('simv: undefined symbol: scsd_xprop_register_merge_mode_cb')
+ANF: scsd_xprop_delete_merge_mode_cb('simv: undefined symbol: scsd_xprop_delete_merge_mode_cb')
+ANF: scsd_xprop_get_merge_mode('simv: undefined symbol: scsd_xprop_get_merge_mode')
+ANF: scsd_thread_get_info('simv: undefined symbol: scsd_thread_get_info')
+ANF: scsd_thread_vc_init('simv: undefined symbol: scsd_thread_vc_init')
+ANF: scsd_master_set_delta_sync_cbk('simv: undefined symbol: scsd_master_set_delta_sync_cbk')
+ANF: scsd_fgp_get_fsdb_cores('simv: undefined symbol: scsd_fgp_get_fsdb_cores')
+ANF: scsd_fgp_get_is_cpu_affinity_disabled('simv: undefined symbol: scsd_fgp_get_is_cpu_affinity_disabled')
+ANF: vhdi_dt_get_type('simv: undefined symbol: vhdi_dt_get_type')
+ANF: vhdi_dt_get_key('simv: undefined symbol: vhdi_dt_get_key')
+ANF: vhdi_dt_get_vhdl_enum_info('simv: undefined symbol: vhdi_dt_get_vhdl_enum_info')
+ANF: vhdi_dt_get_vhdl_physical_info('simv: undefined symbol: vhdi_dt_get_vhdl_physical_info')
+ANF: vhdi_dt_get_vhdl_array_info('simv: undefined symbol: vhdi_dt_get_vhdl_array_info')
+ANF: vhdi_dt_get_vhdl_record_info('simv: undefined symbol: vhdi_dt_get_vhdl_record_info')
+ANF: vhdi_def_traverse_module('simv: undefined symbol: vhdi_def_traverse_module')
+ANF: vhdi_def_traverse_scope('simv: undefined symbol: vhdi_def_traverse_scope')
+ANF: vhdi_def_traverse_variable('simv: undefined symbol: vhdi_def_traverse_variable')
+ANF: vhdi_def_get_module_id_by_vhpi('simv: undefined symbol: vhdi_def_get_module_id_by_vhpi')
+ANF: vhdi_def_get_handle_by_module_id('simv: undefined symbol: vhdi_def_get_handle_by_module_id')
+ANF: vhdi_def_get_variable_info_by_vhpi('simv: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
+ANF: vhdi_def_free('simv: undefined symbol: vhdi_def_free')
+ANF: vhdi_ist_traverse_scope('simv: undefined symbol: vhdi_ist_traverse_scope')
+ANF: vhdi_ist_traverse_variable('simv: undefined symbol: vhdi_ist_traverse_variable')
+ANF: vhdi_ist_convert_by_vhpi('simv: undefined symbol: vhdi_ist_convert_by_vhpi')
+ANF: vhdi_ist_clone('simv: undefined symbol: vhdi_ist_clone')
+ANF: vhdi_ist_free('simv: undefined symbol: vhdi_ist_free')
+ANF: vhdi_ist_hash_key('simv: undefined symbol: vhdi_ist_hash_key')
+ANF: vhdi_ist_compare('simv: undefined symbol: vhdi_ist_compare')
+ANF: vhdi_ist_get_value_addr('simv: undefined symbol: vhdi_ist_get_value_addr')
+ANF: vhdi_set_scsd_callback('simv: undefined symbol: vhdi_set_scsd_callback')
+ANF: vhdi_cbk_set_force_callback('simv: undefined symbol: vhdi_cbk_set_force_callback')
+ANF: vhdi_trigger_init_force('simv: undefined symbol: vhdi_trigger_init_force')
+ANF: vhdi_ist_check_scsd_callback('simv: undefined symbol: vhdi_ist_check_scsd_callback')
+ANF: vhdi_ist_add_scsd_callback('simv: undefined symbol: vhdi_ist_add_scsd_callback')
+ANF: vhdi_ist_remove_scsd_callback('simv: undefined symbol: vhdi_ist_remove_scsd_callback')
+ANF: vhdi_ist_get_scsd_user_data('simv: undefined symbol: vhdi_ist_get_scsd_user_data')
+ANF: vhdi_add_time_change_callback('simv: undefined symbol: vhdi_add_time_change_callback')
+ANF: vhdi_get_real_value_by_value_addr('simv: undefined symbol: vhdi_get_real_value_by_value_addr')
+ANF: vhdi_get_64_value_by_value_addr('simv: undefined symbol: vhdi_get_64_value_by_value_addr')
+ANF: vhdi_xprop_inst_is_promoted('simv: undefined symbol: vhdi_xprop_inst_is_promoted')
+ANF: vdi_ist_convert_by_vhdi('simv: undefined symbol: vdi_ist_convert_by_vhdi')
+ANF: vhdi_ist_get_module_id('simv: undefined symbol: vhdi_ist_get_module_id')
+ANF: vhdi_refine_foreign_scope_type('simv: undefined symbol: vhdi_refine_foreign_scope_type')
+ANF: vhdi_flush_callback('simv: undefined symbol: vhdi_flush_callback')
+ANF: vhdi_set_orig_name('simv: undefined symbol: vhdi_set_orig_name')
+ANF: vhdi_set_dump_pt('simv: undefined symbol: vhdi_set_dump_pt')
+ANF: vhdi_get_fsdb_option('simv: undefined symbol: vhdi_get_fsdb_option')
+ANF: vhdi_fgp_get_mode('simv: undefined symbol: vhdi_fgp_get_mode')
+ANF: vhdi_node_register_composite_var('simv: undefined symbol: vhdi_node_register_composite_var')
+ANF: vhdi_node_analysis('simv: undefined symbol: vhdi_node_analysis')
+ANF: vhdi_node_id('simv: undefined symbol: vhdi_node_id')
+ANF: vhdi_node_ist_check_scsd_callback('simv: undefined symbol: vhdi_node_ist_check_scsd_callback')
+ANF: vhdi_node_ist_add_scsd_callback('simv: undefined symbol: vhdi_node_ist_add_scsd_callback')
+ANF: vhdi_node_ist_get_value_addr('simv: undefined symbol: vhdi_node_ist_get_value_addr')
+ANF: vhdi_enc_def_traverse_module('simv: undefined symbol: vhdi_enc_def_traverse_module')
+ANF: vhdi_enc_def_traverse_scope('simv: undefined symbol: vhdi_enc_def_traverse_scope')
+ANF: vhdi_enc_def_traverse_variable('simv: undefined symbol: vhdi_enc_def_traverse_variable')
+ANF: vhdi_enc_ist_traverse_scope('simv: undefined symbol: vhdi_enc_ist_traverse_scope')
+ANF: vhdi_enc_ist_traverse_variable('simv: undefined symbol: vhdi_enc_ist_traverse_variable')
+ANF: vhdi_enc_ist_get_module_id('simv: undefined symbol: vhdi_enc_ist_get_module_id')
+ANF: vhdi_enc_def_get_handle_by_module_id('simv: undefined symbol: vhdi_enc_def_get_handle_by_module_id')
+VCS compile option:
+ option[0]: simv
+ option[1]: +v2k
+ option[2]: +maxdelays
+ option[3]: +neg_tchk
+ option[4]: +define+SDF+tb4
+ option[5]: +define+CYCLE=10.0
+ option[6]: /usr/cad/synopsys/vcs/2022.06/linux64/bin/vcs1
+ option[7]: -Mcc=gcc
+ option[8]: -Mcplusplus=g++
+ option[9]: -Masflags=
+ option[10]: -Mcfl= -pipe -fPIC -O -I/usr/cad/synopsys/vcs/2022.06/include 
+ option[11]: -Mxllcflags=
+ option[12]: -Mxcflags= -pipe -fPIC -I/usr/cad/synopsys/vcs/2022.06/include
+ option[13]: -Mldflags= -rdynamic 
+ option[14]: -Mout=simv
+ option[15]: -Mamsrun=
+ option[16]: -Mvcsaceobjs=
+ option[17]: -Mobjects= /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvirsim.so /usr/cad/synopsys/vcs/2022.06/linux64/lib/liberrorinf.so /usr/cad/synopsys/vcs/2022.06/linux64/lib/libsnpsmalloc.so /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvfs.so 
+ option[18]: -Mexternalobj=
+ option[19]: -Msaverestoreobj=/usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o
+ option[20]: -Mcrt0=
+ option[21]: -Mcrtn=
+ option[22]: -Mcsrc=
+ option[23]: -Msyslibs=/usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/pli.a -ldl 
+ option[24]: -Xvcs_run_simv=1
+ option[25]: -full64
+ option[26]: -debug_access+all
+ option[27]: +vpi
+ option[28]: +vcsd1
+ option[29]: +itf+/usr/cad/synopsys/vcs/2022.06/linux64/lib/vcsdp_lite.tab
+ option[30]: +v2k
+ option[31]: +maxdelays
+ option[32]: -negdelay
+ option[33]: +neg_tchk
+ option[34]: +define+SDF+tb4
+ option[35]: +define+CYCLE=10.0
+ option[36]: -picarchive
+ option[37]: -P
+ option[38]: /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/verdi.tab
+ option[39]: -fsdb
+ option[40]: -gen_obj
+ option[41]: -f
+ option[42]: rtl_03.f
+ option[43]: -load
+ option[44]: /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
+Chronologic Simulation VCS Release T-2022.06_Full64
+Linux 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 15:41:52 UTC 2023 x86_64
+CPU cores: 24
+Limit information:
+======================================
+cputime		unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8192 kbytes
+coredumpsize		0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked		64 kbytes
+maxproc		4096
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+REMOTEHOST=140.112.71.87
+MANPATH=/usr/cad/synopsys/synthesis/cur/doc/syn/man:/usr/cad/synopsys/vcs/2022.06/doc/man
+XDG_SESSION_ID=39052
+TMIARCH=RH_64
+HOSTNAME=cad16
+XLOCALEDIR=/usr/cad/synopsys/astro/cur/etc/locale
+SYNOPSYS_TMAX=/usr/cad/synopsys/tmax/cur
+UNAME=/bin/uname
+SELINUX_ROLE_REQUESTED=
+XKEYSYMDB=/usr/cad/synopsys/astro/cur/etc/XKeysymDB
+SCRNAME=vcs
+VCS_DEPTH=0
+SHELL=/bin/tcsh
+TERM=xterm
+HOST=cad16
+SSH_CLIENT=140.112.71.87 56781 22
+SELINUX_USE_CURRENT_RANGE=
+CDS_LOAD_ENV=CSF
+QTDIR=/usr/lib64/qt-3.3
+MGC_LOCATION_MAP=NO_MAP
+HSP_GCC_VERSION=9.2.0
+QTINC=/usr/lib64/qt-3.3/include
+SSH_TTY=/dev/pts/7
+LC_ALL=C
+SNPS_VCS_INTERNAL_ROOT_PID=18141
+QT_GRAPHICSSYSTEM_CHECKED=1
+SPAPI_AHDL_INCLUDE=/home/raid7_4/raid1_1/linux/synopsys/hspice/2022.06/hspice/include
+USER=r2921a01
+GROUP=user
+HSP_HOME=/home/raid7_4/raid1_1/linux/synopsys/hspice/2022.06/hspice
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+LD_LIBRARY_PATH=/usr/cad/synopsys/vcs/2022.06/lib:/usr/cad/synopsys/vcs/2022.06/linux64/lib:/lib64:/usr/lib64:/usr/local/lib64::/usr/cad/cadence/ASSURA/cur/tools/assura/lib:/usr/cad/cadence/ASSURA/cur/tools/dsm/lib:/usr/cad/cadence/ASSURA/cur/tools/lib:::/usr/cad/innovus/cur//tools/tlfUtil/lib:/usr/cad/cadence/CONFRML/cur/tools/lib:/usr/cad/cadence/IC/cur/tools/lib:/usr/spring_soft/verdi/cur/share/PLI/nc_xl/LINUX/xl_shared:/usr/spring_soft/verdi/cur/share/PLI/nc_xl/LINUX/nc_shared:/home/raid7_4/raid1_1/linux/novas/verdi/cur/share/PLI/IUS/LINUX/::/usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64
+SCRIPT_NAME=vcs
+VCS_MX_HOME_INTERNAL=1
+HOSTTYPE=x86_64-linux
+installdir=/home/raid7_4/raid1_1/linux/synopsys/hspice/2022.06/hspice
+SNPS_VCS_CLANG_PATH=/usr/cad/synopsys/vcs/2022.06/linux64/clang
+ENCOUNTER=/usr/cad/innovus/cur/tools/fe
+SNPSLMD_LICENSE_FILE=26585@lshc
+VCS_USER_OPTIONS=-f rtl_03.f -full64 -R -debug_access+all +v2k +maxdelays -negdelay +neg_tchk +define+SDF+tb4 +define+CYCLE=10.0
+CMIARCH=RH_64
+OVA_UUM=0
+VCS_MODE_FLAG=64
+PATH=.:/usr/cad/synopsys/vcs/2022.06/amd64/bin:/usr/cad/synopsys/spyglass/2022.06//SPYGLASS_HOME/bin:/usr/cad/cadence/ASSURA/cur/tools/assura/bin:/usr/cad/cadence/ASSURA/cur/tools/dsm/bin:/usr/cad/cadence/ASSURA/cur/tools/bin:/usr/cad/cadence/ASSURA/cur/tools/dfII/bin:/home/raid7_4/raid1_1/linux/synopsys/hspice/2022.06/hspice/bin:/home/raid7_4/raid1_1/linux/synopsys/hspice/2022.06/hspice/GNU/linux64/gcc/bin:/home/raid7_4/raid1_1/linux/synopsys/hspice/2022.06/hspice/linux64:/usr/bin:/usr/ucb/bin:/usr/cad/innovus/cur/tools/celtic/bin:/usr/cad/innovus/cur/tools/plato/bin:/usr/cad/innovus/cur/tools/dfII/bin:/usr/cad/innovus/cur/tools/bin:/usr/cad/innovus/cur//tools/tlfUtil/bin:/usr/cad/cadence/CONFRML/cur/./bin:/usr/cad/cadence/CONFRML/cur/tools/bin:/usr/mentor/calibre/cur/bin:/usr/cad/cadence/IC/cur/tools/dfII/bin:/usr/cad/cadence/IC/cur/tools/dracula/bin:/usr/cad/cadence/IC/cur/tools/bin:/usr/cad/synopsys/tmax/cur/bin:/usr/cad/synopsys/astro/cur/bin/AMD.64:/usr/spring_soft/verdi/cur/bin:/usr/spring_soft/verdi/cur/nLint/bin:/usr/bin/X11:/usr/cad/synopsys/primetime/cur/amd64/syn/bin:/usr/bin/X11:/usr/cad/synopsys/coreConsultant/cur/bin:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/synopsys/lc/cur/bin:/usr/mentor/calibre/cur/bin:/usr/cad/synopsys/customexplorer/cur/bin:/usr/cad/cadence/SPECTRE/cur/tools/dfII/bin:/usr/cad/cadence/SPECTRE/cur/tools/bin:/usr/cad/cadence/STRATUS/cur/tools/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/EDI/cur/tools/celtic/bin:/usr/cad/cadence/EDI/cur/tools/plato/bin:/usr/cad/cadence/EDI/cur/tools/dfII/bin:/usr/cad/cadence/EDI/cur/tools/fe/bin:/usr/cad/cadence/EDI/cur/tools/cdsdoc/bin:/usr/cad/cadence/EDI/cur/tools/bin:/usr/cad/cadence/EDI/cur//tools/tlfUtil/bin:/usr/cad/cadence/RC/cur/tools/bin:/usr/cad/cadence/MMSIM/cur/tools/dfII/bin:/usr/cad/cadence/MMSIM/cur/tools/bin:/usr/cad/cadence/NEOCIRCUIT/cur/tools/NeoCircuit/bin:bin.linux:/usr/cad/cadence/SPB/cur/tools/specctra/bin:/usr/cad/cadence/SPB/cur/tools/pcb/bin:/usr/cad/cadence/SPB/cur/tools/dfII/bin:/usr/cad/cadence/SPB/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/usr/cad/cadence/IC/cur/tools/dfII/bin:/usr/cad/cadence/IC/cur/tools/dracula/bin:/usr/cad/cadence/IC/cur/tools/bin:/usr/cad/cadence/EXT/cur/tools/bin:/usr/cad/cadence/ETS/cur/tools/bin:/usr/cad/cadence/CONFRML/cur/./bin:/usr/cad/cadence/CONFRML/cur/tools/bin:/usr/cad/cadence/CCD/cur/tools/bin:/usr/cad/cadence/ASSURA/cur/tools/assura/bin:/usr/cad/cadence/ASSURA/cur/tools/dsm/bin:/usr/cad/cadence/ASSURA/cur/tools/bin:/usr/cad/cadence/ASSURA/cur/tools/dfII/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/raid7_4/raid1_1/linux/novas/verdi/cur/bin
+MAIL=/var/spool/mail/r2921a01
+SNPS_VCS_INTERNAL_CURR_PID=18141
+VERDI_HOME=/usr/cad/synopsys/verdi/cur
+PWD=/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/03_GATE
+OAHOME=/usr/cad/cadence/oa_v22.04.073
+VCS_HOME=/usr/cad/synopsys/vcs/2022.06
+SNPS_VCS_INTERNAL_MEMPRELOAD_USE_LIBC=1
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+VERPLEX_HOME=/usr/cad/cadence/CONFRML/cur
+OA_HOME=/usr/cad/innovus/cur/oa
+SYNTHESIS=/usr/cad/synopsys/synthesis/cur
+VMR_MODE_FLAG=64
+SELINUX_LEVEL_REQUESTED=
+VCS_CC=gcc
+LM_LICENSE_FILE=26585@lstc:5280@lshc:5280@lstc:5280@lstn:1717@lstc:
+CDS_Netlisting_Mode=Analog
+PRIMETIME=/usr/cad/synopsys/primetime/cur
+VCS_ARG_ADDED_FOR_TMP=1
+SNPS_VCS_TMPDIR=/tmp/vcs_20231105174242_18141
+HOME=/home/raid7_2/user12/r2921a01
+SHLVL=3
+HSP_GCC=/home/raid7_4/raid1_1/linux/synopsys/hspice/2022.06/hspice/GNU/linux64/gcc/bin/gcc -m64 
+OSTYPE=linux
+MGC_HOME=/usr/mentor/calibre/cur
+SNPS_64=1
+VCS_COM=/usr/cad/synopsys/vcs/2022.06/linux64/bin/vcs1
+VENDOR=unknown
+MGC_TMPDIR=/tmp
+HSP_SIGMA_AMP=/home/raid7_4/raid1_1/linux/synopsys/hspice/2022.06/hspice/linux64/python/AVA/ava
+SNPS_PLATFORM=linux64
+LOGNAME=r2921a01
+MACHTYPE=x86_64
+QTLIB=/usr/lib64/qt-3.3/lib
+SNPS_VCS_INTERNAL_ROOT_START_TIME=1699206162.239685066
+SSH_CONNECTION=140.112.71.87 56781 140.112.20.59 22
+NEOCKTHOME=/usr/cad/cadence/NEOCIRCUIT/cur/tools/NeoCircuit
+CDS_LIC_FILE=/usr/cad/cadence/IC/cur/share/license/license.dat
+mraarch=linux_64
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+SHLIB_PATH=/usr/spring_soft/verdi/cur/share/PLI/nc_xl/LINUX/xl_shared:/usr/spring_soft/verdi/cur/share/PLI/nc_xl/LINUX/nc_shared
+ARCH=linux64
+sysc_uni_pwd=/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/03_GATE
+CDPL_HOME=/home/raid7_4/raid1_1/linux/synopsys/hspice/2022.06/hspice/cdpl
+DISPLAY=localhost:15.0
+XDG_RUNTIME_DIR=/run/user/1579
+VCS_ARCH=linux64
+SYN_MAN_DIR=/usr/cad/synopsys/vcs/2022.06/doc/man
+TOOL_HOME=/usr/cad/synopsys/vcs/2022.06/linux64
+ASSURAHOME=/usr/cad/cadence/ASSURA/cur
+_=./simv
+OLDPWD=/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/03_GATE/simv.daidir/debug_dump/fsearch
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_EXEC_DONE=1
+DVE=/usr/cad/synopsys/vcs/2022.06/gui/dve
+SPECMAN_OUTPUT_TO_TTY=1
+FLEXLM_BORROWFILE=/home/raid7_2/user12/r2921a01/.cad16-borrow.txt
+Runtime command line arguments:
+argv[0]=simv
+argv[1]=+v2k
+argv[2]=+maxdelays
+argv[3]=+neg_tchk
+argv[4]=+define+SDF+tb4
+argv[5]=+define+CYCLE=10.0
+255 profile - 100
+          CPU/Mem usage: 0.150 sys,  0.460 user,  291.34M mem
+256 Elapsed time:    0:00:01    Mon Nov  6 01:42:56 2023
+257 User CPU time used: 0 seconds
+258 System CPU time used: 0 seconds
+259 pliAppInit
+260 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
+261 FSDB_GATE is set.
+262 FSDB_RTL is set.
+263 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
+264 Enable Parallel Dumping.
+265 pliAppMiscSet: New Sim Round
+266 pliEntryInit
+267 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so through $NOVAS_HOME setting.
+268 FSDB Dumper for VCS, Release Verdi_T-2022.06, Linux x86_64/64bit, 05/29/2022
+269 (C) 1996 - 2022 by Synopsys, Inc.
+270 sps_call_fsdbDumpfile_main at 0 : ../00_TESTBED/testbench.v(151)
+271 argv[0]: (core.fsdb)
+272 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+273 *Verdi* FSDB WARNING: Simv_lock file is locked (core.fsdb.slock). Attempt to overwrite the FSDB (core.fsdb.slock) which is currently written by other process is not permitted
+274 *Verdi* ERROR: Failed to create FSDB file: 'core.fsdb'.
+275 DVDI_is_vir_unload_enabled is enable
+276 FSDB_VCS_ENABLE_NATIVE_VC is enable
+277 sps_call_fsdbDumpvars_vd_main at 0 : ../00_TESTBED/testbench.v(152)
+278 argv[0]: (0)
+279 argv[1]: (+mda)
+280 *Verdi* : Create FSDB file 'novas.fsdb'
+281 [spi_vcs_vd_ppi_create_root]: no upf option
+282 compile option from '/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/03_GATE/simv.daidir/vcs_rebuild'.
+283   "vcs '-f' 'rtl_03.f' '-full64' '-R' '-debug_access+all' '+v2k' '+maxdelays' '-negdelay' '+neg_tchk' '+define+SDF+tb4' '+define+CYCLE=10.0' 2>&1"
+284 *Verdi* : Begin traversing the scopes, layer (0).
+285 *Verdi* : Enable +mda dumping.
+286 *Verdi* WARNING: Var 'testbed.golden_mem' will be ignored because its total element is larger than or equal to 2097152.
+287 *Verdi* : You may set environmental parameter "FSDB_MAX_VAR_ELEM" to enable the dumping.
+288 *Verdi* : End of traversing.
+289 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.220 sys,  1.120 user,  450.01M mem
+                   incr: 0.050 sys,  0.620 user,  66.53M mem
+                   accu: 0.050 sys,  0.620 user,  66.53M mem
+              accu incr: 0.050 sys,  0.620 user,  66.53M mem
+
+          Count usage: 1019833 var,  1020413 idcode,  18304 callback
+                 incr: 1019833 var,  1020413 idcode,  18304 callback
+                 accu: 1019833 var,  1020413 idcode,  18304 callback
+            accu incr: 1019833 var,  1020413 idcode,  18304 callback
+290 Elapsed time:    0:00:07    Mon Nov  6 01:43:02 2023
+291 User CPU time used: 1 seconds
+292 System CPU time used: 0 seconds
+293 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.250 sys,  1.390 user,  499.95M mem
+                   incr: 0.030 sys,  0.270 user,  49.94M mem
+                   accu: 0.080 sys,  0.890 user,  116.47M mem
+              accu incr: 0.030 sys,  0.270 user,  49.94M mem
+
+          Count usage: 1019833 var,  1020413 idcode,  18304 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 1019833 var,  1020413 idcode,  18304 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+294 Elapsed time:    0:00:07    Mon Nov  6 01:43:02 2023
+295 User CPU time used: 1 seconds
+296 System CPU time used: 0 seconds
+297 *Verdi* FSDB: For performance reasons, the Memory Size Limit has been increased to 128M.
+298 End of simulation at 48860000
+299 Memory usage: 672.231 M
+300 Maximum resident set size: 289 MB
+301 Hard page faults: 1
+302 Soft page f305 End of simulation at 1136507284
+306 Memory usage: 1287.336 M
+307 Maximum resident set size: 873 MB
+308 Hard page faults: 0
+309 Soft page faults: 3221723
+310 Elapsed time:    0:06:44    Mon Nov  6 01:46:22 2023
+311 User CPU time used: 272 seconds
+312 System CPU time used: 5 seconds
+313 Catch signal "Abort". Log stack trace to novas_dump.log
+Thread 2 (Thread 0x2aaaefb87700 (LWP 18120)):
+#0  0x00002aaab39d7a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002aaab2dec78f in SNPSle_95c894712e6f9118bc51d0bbc485432a () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#2  0x00002aaab2dec9b6 in SNPSle_de8e8fbcd7ecf84c9ae14573df0a2ec6 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#3  0x00002aaab2efec1c in SNPSle_57415c5b07ec5e8b8118f96e6212a2c42c69fd3f49376c0d () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#4  0x00002aaab2f03d97 in SNPSle_1ac40924fdff8310f5184d6eb67c5798036a89169a27d790 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#5  0x00002aaab2fa38f4 in SNPSle_e90acbbdf8c656c898db7186881c4c18f0a07e70af506669 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#6  0x00002aaab2fa3ad1 in SNPSle_e90acbbdf8c656c898db7186881c4c184477972426309dce () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#7  0x00002aaab2de9904 in SNPSle_2ae1e3a2d1f3015a29c6f48609f176ab52b77992dcdcd2bb5e00c0d72892e4ae29ba00be976148ed () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#8  0x00002aaab2ded482 in SNPSle_94a979f2a5637ee494a8dd1225b7e6c6 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#9  0x00002aaab39d3ea5 in start_thread () from /lib64/libpthread.so.0
+#10 0x00002aaab42f0b0d in clone () from /lib64/libc.so.6
+Thread 1 (Thread 0x2aaaaab91140 (LWP 17910)):
+#0  0x00002aaab42e1b5d in read () from /lib64/libc.so.6
+#1  0x00002aaab426dd54 in __GI__IO_file_underflow () from /lib64/libc.so.6
+#2  0x00002aaab426ef22 in __GI__IO_default_uflow () from /lib64/libc.so.6
+#3  0x00002aaab4261cd4 in __GI__IO_getline_info () from /lib64/libc.so.6
+#4  0x00002aaab4260ad6 in fgets () from /lib64/libc.so.6
+#5  0x00002aaabaefeacb in ndpGetCallStack.part.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#6  0x00002aaabb08e3b7 in pliAppDbg_SigHandler_cb () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#7  0x00002aaabb1e76c0 in _spi_vcs_cb_at_abort_cb_tf.lto_priv.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#8  0x00002aaaae17d545 in SNPSle_82244d58c54c18c70d63edc9becab634 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#9  <signal handler called>
+#10 0x00002aaabb060dd7 in pliApp_CloseFile.lto_priv.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#11 0x00002aaabb06128e in pliApp_CloseAllFileQuick () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#12 0x00002aaabaf72234 in pliAppSimExit () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#13 0x00002aaabaf72e6a in pliAppEndOfSimCBFunc () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#14 0x00002aaabb1ee189 in spi_vcs_cb_receive_misc_finish.part.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#15 0x00002aaabb1f0111 in sps_vcs_misc () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#16 0x00000000004ae9b4 in novas_misc ()
+#17 0x00002aaaae5233bd in SNPSle_fda3d9fd9a22a242 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#18 0x00002aaaae500dca in SNPSle_052c17d30057e23d366f55cc68680735 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#19 0x00002aaaae5011e0 in SNPSle_f870889e12c4aaac29856074cb291de2 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#20 0x00002aaaae17d0cd in SNPSle_82244d58c54c18c70d63edc9becab634 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#21 <signal handler called>
+#22 0x00002aaab4228657 in kill () from /lib64/libc.so.6
+#23 0x00002aaaae17d0cd in SNPSle_82244d58c54c18c70d63edc9becab634 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#24 <signal handler called>
+#25 0x00002aaab39daddd in lseek64 () from /lib64/libpthread.so.0
+#26 0x00002aaabb279607 in WriteSList () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#27 0x00002aaabb2853a5 in PerformFlushSession () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#28 0x00002aaabb287ada in ffw_Sync () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#29 0x00002aaabb060bbe in pliApp_CloseFile.lto_priv.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#30 0x00002aaabb06128e in pliApp_CloseAllFileQuick () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#31 0x00002aaabaf72234 in pliAppSimExit () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#32 0x00002aaabaf72e6a in pliAppEndOfSimCBFunc () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#33 0x00002aaabb1ee189 in spi_vcs_cb_receive_misc_finish.part.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#34 0x00002aaabb1ee60b in spi_vcs_cb_receive_vpi_end_of_sim.lto_priv.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#35 0x00002aaaada6c1ff in SNPSle_27959203ce5ad0720e45d4754d3a515910cb8b7ca4bb47195752011ce913284754e716cad71ddff5 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#36 0x00002aaaada6f37e in SNPSle_eed38e464c7100f70d40bb073590aafa () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#37 0x00002aaab059f345 in SNPSle_294d108d9c21223f31bca47d22167e39 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#38 0x00002aaaae5014f7 in SNPSle_85eeb05ebf66d014 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#39 0x00002aaab0583c07 in SNPSle_ef9d4159d6b0a8c333e5eb1698de1f42 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#40 0x00002aaab33f7e9e in SNPSle_5e81f6b63a2a95636e35a4a9990f786f () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#41 0x00002aaab3496281 in SNPSle_65b053138f9c3b6cf22b15add8ae4e9a487a0ec4fda0cb22912f0f5520af875e () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#42 0x00002aaab345f19c in SNPSle_be8fe15a1f99cd13ee63243e4d02efff () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#43 0x00002aaab34382ef in SNPSle_94e9fbb8d738ab46cfd414ee54f1de5383273f4fb394e5b165dad2557df34756 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#44 0x00002aaab3439e8a in SNPSle_99d57af1703165c6de38b998ef9808a231246e37d17d6243 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#45 0x00002aaab2dee993 in SNPSle_e7e0abe4b23d7392dbe8eb40e096b1c1 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#46 0x00002aaab343d4d6 in SNPSle_74e8e69f94d6825e49dd10c040695a4d5f6d533d7f5c326c () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#47 0x00002aaab3439dda in SNPSle_f3b6ab49e509e8f4f22acac1c6007a146d0d976c22056390 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#48 0x00002aaab343ebc3 in SNPSle_a09b4dc4f52ce1609672f8676eb959a4b083a1d380f86bf4 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#49 0x00002aaab05672e5 in SNPSle_4a04c0fe7bbc29f5 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#50 0x00002aaab057b2f5 in SNPSle_e20d7017c7296ea3 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#51 0x00002aaaae376cfa in SNPSle_63c7abb936d47b07d29d61775f9dbe8c1486beb9213552a3 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#52 0x00002aaaae501d1f in SNPSle_490598bfebcc8e81efcf3d1815066cc9 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#53 0x00002aaaae51c691 in SNPSle_490598bfebcc8e81 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#54 0x00002aaaab92f0c3 in main () from /home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/03_GATE/simv.daidir/_cuarc0.so
+#55 0x00002aaab4214555 in __libc_start_main () from /lib64/libc.so.6
+#56 0x00000000004138f8 in _start ()
+314 Catch signal "Abort". Log stack trace to novas_dump.log
+Thread 2 (Thread 0x2aaaefb87700 (LWP 18120)):
+#0  0x00002aaab39d7a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002aaab2dec78f in SNPSle_95c894712e6f9118bc51d0bbc485432a () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#2  0x00002aaab2dec9b6 in SNPSle_de8e8fbcd7ecf84c9ae14573df0a2ec6 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#3  0x00002aaab2efec1c in SNPSle_57415c5b07ec5e8b8118f96e6212a2c42c69fd3f49376c0d () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#4  0x00002aaab2f03d97 in SNPSle_1ac40924fdff8310f5184d6eb67c5798036a89169a27d790 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#5  0x00002aaab2fa38f4 in SNPSle_e90acbbdf8c656c898db7186881c4c18f0a07e70af506669 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#6  0x00002aaab2fa3ad1 in SNPSle_e90acbbdf8c656c898db7186881c4c184477972426309dce () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#7  0x00002aaab2de9904 in SNPSle_2ae1e3a2d1f3015a29c6f48609f176ab52b77992dcdcd2bb5e00c0d72892e4ae29ba00be976148ed () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#8  0x00002aaab2ded482 in SNPSle_94a979f2a5637ee494a8dd1225b7e6c6 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#9  0x00002aaab39d3ea5 in start_thread () from /lib64/libpthread.so.0
+#10 0x00002aaab42f0b0d in clone () from /lib64/libc.so.6
+Thread 1 (Thread 0x2aaaaab91140 (LWP 17910)):
+#0  0x00002aaab42e1b5d in read () from /lib64/libc.so.6
+#1  0x00002aaab426dd54 in __GI__IO_file_underflow () from /lib64/libc.so.6
+#2  0x00002aaab426ef22 in __GI__IO_default_uflow () from /lib64/libc.so.6
+#3  0x00002aaab4261cd4 in __GI__IO_getline_info () from /lib64/libc.so.6
+#4  0x00002aaab4260ad6 in fgets () from /lib64/libc.so.6
+#5  0x00002aaabaefeacb in ndpGetCallStack.part.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#6  0x00002aaabb08e3b7 in pliAppDbg_SigHandler_cb () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#7  0x00002aaabb1e76c0 in _spi_vcs_cb_at_abort_cb_tf.lto_priv.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#8  0x00002aaaae17d545 in SNPSle_82244d58c54c18c70d63edc9becab634 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#9  <signal handler called>
+#10 0x00002aaabb060dd7 in pliApp_CloseFile.lto_priv.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#11 0x00002aaabb06128e in pliApp_CloseAllFileQuick () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#12 0x00002aaabaf72234 in pliAppSimExit () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#13 0x00002aaabaf72e6a in pliAppEndOfSimCBFunc () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#14 0x00002aaabb1ee189 in spi_vcs_cb_receive_misc_finish.part.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#15 0x00002aaabb1f0111 in sps_vcs_misc () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#16 0x00000000004ae9b4 in novas_misc ()
+#17 0x00002aaaae5233bd in SNPSle_fda3d9fd9a22a242 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#18 0x00002aaaae500dca in SNPSle_052c17d30057e23d366f55cc68680735 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#19 0x00002aaaae5011e0 in SNPSle_f870889e12c4aaac29856074cb291de2 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#20 0x00002aaaae17d0cd in SNPSle_82244d58c54c18c70d63edc9becab634 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#21 <signal handler called>
+#22 0x00002aaab4228657 in kill () from /lib64/libc.so.6
+#23 0x00002aaaae17d0cd in SNPSle_82244d58c54c18c70d63edc9becab634 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#24 <signal handler called>
+#25 0x00002aaab39daddd in lseek64 () from /lib64/libpthread.so.0
+#26 0x00002aaabb279607 in WriteSList () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#27 0x00002aaabb2853a5 in PerformFlushSession () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#28 0x00002aaabb287ada in ffw_Sync () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#29 0x00002aaabb060bbe in pliApp_CloseFile.lto_priv.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#30 0x00002aaabb06128e in pliApp_CloseAllFileQuick () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#31 0x00002aaabaf72234 in pliAppSimExit () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#32 0x00002aaabaf72e6a in pliAppEndOfSimCBFunc () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#33 0x00002aaabb1ee189 in spi_vcs_cb_receive_misc_finish.part.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#34 0x00002aaabb1ee60b in spi_vcs_cb_receive_vpi_end_of_sim.lto_priv.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#35 0x00002aaaada6c1ff in SNPSle_27959203ce5ad0720e45d4754d3a515910cb8b7ca4bb47195752011ce913284754e716cad71ddff5 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#36 0x00002aaaada6f37e in SNPSle_eed38e464c7100f70d40bb073590aafa () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#37 0x00002aaab059f345 in SNPSle_294d108d9c21223f31bca47d22167e39 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#38 0x00002aaaae5014f7 in SNPSle_85eeb05ebf66d014 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#39 0x00002aaab0583c07 in SNPSle_ef9d4159d6b0a8c333e5eb1698de1f42 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#40 0x00002aaab33f7e9e in SNPSle_5e81f6b63a2a95636e35a4a9990f786f () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#41 0x00002aaab3496281 in SNPSle_65b053138f9c3b6cf22b15add8ae4e9a487a0ec4fda0cb22912f0f5520af875e () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#42 0x00002aaab345f19c in SNPSle_be8fe15a1f99cd13ee63243e4d02efff () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#43 0x00002aaab34382ef in SNPSle_94e9fbb8d738ab46cfd414ee54f1de5383273f4fb394e5b165dad2557df34756 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#44 0x00002aaab3439e8a in SNPSle_99d57af1703165c6de38b998ef9808a231246e37d17d6243 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#45 0x00002aaab2dee993 in SNPSle_e7e0abe4b23d7392dbe8eb40e096b1c1 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#46 0x00002aaab343d4d6 in SNPSle_74e8e69f94d6825e49dd10c040695a4d5f6d533d7f5c326c () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#47 0x00002aaab3439dda in SNPSle_f3b6ab49e509e8f4f22acac1c6007a146d0d976c22056390 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#48 0x00002aaab343ebc3 in SNPSle_a09b4dc4f52ce1609672f8676eb959a4b083a1d380f86bf4 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#49 0x00002aaab05672e5 in SNPSle_4a04c0fe7bbc29f5 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#50 0x00002aaab057b2f5 in SNPSle_e20d7017c7296ea3 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#51 0x00002aaaae376cfa in SNPSle_63c7abb936d47b07d29d61775f9dbe8c1486beb9213552a3 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#52 0x00002aaaae501d1f in SNPSle_490598bfebcc8e81efcf3d1815066cc9 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#53 0x00002aaaae51c691 in SNPSle_490598bfebcc8e81 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#54 0x00002aaaab92f0c3 in main () from /home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/03_GATE/simv.daidir/_cuarc0.so
+#55 0x00002aaab4214555 in __libc_start_main () from /lib64/libc.so.6
+#56 0x00000000004138f8 in _start ()
+315 Elapsed time:    0:07:05    Mon Nov  6 01:46:43 2023
+316 User CPU time used: 272 seconds
+317 System CPU time used: 5 seconds
+318 Sim process exit
+319 Memory usage: 1287.291 M
+320 Maximum resident set size: 873 MB
+321 Hard page faults: 4
+322 Soft page faults: 3222644
+323 Elapsed time:    0:07:05    Mon Nov  6 01:46:43 2023
+324 User CPU time used: 272 seconds
+325 System CPU time used: 5 seconds
+326 Catch signal "Abort". Log stack trace to novas_dump.log
+Thread 2 (Thread 0x2aaaefb87700 (LWP 18120)):
+#0  0x00002aaab39d7a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002aaab2dec78f in SNPSle_95c894712e6f9118bc51d0bbc485432a () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#2  0x00002aaab2dec9b6 in SNPSle_de8e8fbcd7ecf84c9ae14573df0a2ec6 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#3  0x00002aaab2efec1c in SNPSle_57415c5b07ec5e8b8118f96e6212a2c42c69fd3f49376c0d () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#4  0x00002aaab2f03d97 in SNPSle_1ac40924fdff8310f5184d6eb67c5798036a89169a27d790 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#5  0x00002aaab2fa38f4 in SNPSle_e90acbbdf8c656c898db7186881c4c18f0a07e70af506669 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#6  0x00002aaab2fa3ad1 in SNPSle_e90acbbdf8c656c898db7186881c4c184477972426309dce () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#7  0x00002aaab2de9904 in SNPSle_2ae1e3a2d1f3015a29c6f48609f176ab52b77992dcdcd2bb5e00c0d72892e4ae29ba00be976148ed () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#8  0x00002aaab2ded482 in SNPSle_94a979f2a5637ee494a8dd1225b7e6c6 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#9  0x00002aaab39d3ea5 in start_thread () from /lib64/libpthread.so.0
+#10 0x00002aaab42f0b0d in clone () from /lib64/libc.so.6
+Thread 1 (Thread 0x2aaaaab91140 (LWP 17910)):
+#0  0x00002aaab42e1b5d in read () from /lib64/libc.so.6
+#1  0x00002aaab426dd54 in __GI__IO_file_underflow () from /lib64/libc.so.6
+#2  0x00002aaab426ef22 in __GI__IO_default_uflow () from /lib64/libc.so.6
+#3  0x00002aaab4261cd4 in __GI__IO_getline_info () from /lib64/libc.so.6
+#4  0x00002aaab4260ad6 in fgets () from /lib64/libc.so.6
+#5  0x00002aaabaefeacb in ndpGetCallStack.part.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#6  0x00002aaabb08e3b7 in pliAppDbg_SigHandler_cb () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#7  0x00002aaabb1e76c0 in _spi_vcs_cb_at_abort_cb_tf.lto_priv.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#8  0x00002aaaae17d545 in SNPSle_82244d58c54c18c70d63edc9becab634 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#9  <signal handler called>
+#10 0x00002aaabb060dd7 in pliApp_CloseFile.lto_priv.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#11 0x00002aaabb06128e in pliApp_CloseAllFileQuick () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#12 0x00002aaabaf72234 in pliAppSimExit () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#13 0x00002aaabaf729c2 in pliAppSimProcessExit () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#14 0x00002aaabb1e765e in spi_vcs_cb_at_safe_exit_cb () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#15 0x00002aaabaefe122 in ndpAtExitProc.lto_priv.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#16 0x00002aaab422bce9 in __run_exit_handlers () from /lib64/libc.so.6
+#17 0x00002aaab422bd37 in exit () from /lib64/libc.so.6
+#18 0x00002aaab0439768 in SNPSle_946ebca490adacba () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#19 0x00002aaaae4eabc3 in SNPSle_64133461705005bb725549e2e6fa1b3f () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#20 0x00002aaaae17d0cd in SNPSle_82244d58c54c18c70d63edc9becab634 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#21 <signal handler called>
+#22 0x00002aaabb060dd7 in pliApp_CloseFile.lto_priv.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#23 0x00002aaabb06128e in pliApp_CloseAllFileQuick () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#24 0x00002aaabaf72234 in pliAppSimExit () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#25 0x00002aaabaf72e6a in pliAppEndOfSimCBFunc () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#26 0x00002aaabb1ee189 in spi_vcs_cb_receive_misc_finish.part.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#27 0x00002aaabb1f0111 in sps_vcs_misc () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#28 0x00000000004ae9b4 in novas_misc ()
+#29 0x00002aaaae5233bd in SNPSle_fda3d9fd9a22a242 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#30 0x00002aaaae500dca in SNPSle_052c17d30057e23d366f55cc68680735 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#31 0x00002aaaae5011e0 in SNPSle_f870889e12c4aaac29856074cb291de2 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#32 0x00002aaaae17d0cd in SNPSle_82244d58c54c18c70d63edc9becab634 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#33 <signal handler called>
+#34 0x00002aaab4228657 in kill () from /lib64/libc.so.6
+#35 0x00002aaaae17d0cd in SNPSle_82244d58c54c18c70d63edc9becab634 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#36 <signal handler called>
+#37 0x00002aaab39daddd in lseek64 () from /lib64/libpthread.so.0
+#38 0x00002aaabb279607 in WriteSList () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#39 0x00002aaabb2853a5 in PerformFlushSession () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#40 0x00002aaabb287ada in ffw_Sync () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#41 0x00002aaabb060bbe in pliApp_CloseFile.lto_priv.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#42 0x00002aaabb06128e in pliApp_CloseAllFileQuick () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#43 0x00002aaabaf72234 in pliAppSimExit () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#44 0x00002aaabaf72e6a in pliAppEndOfSimCBFunc () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#45 0x00002aaabb1ee189 in spi_vcs_cb_receive_misc_finish.part.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#46 0x00002aaabb1ee60b in spi_vcs_cb_receive_vpi_end_of_sim.lto_priv.0 () from /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202206.so
+#47 0x00002aaaada6c1ff in SNPSle_27959203ce5ad0720e45d4754d3a515910cb8b7ca4bb47195752011ce913284754e716cad71ddff5 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#48 0x00002aaaada6f37e in SNPSle_eed38e464c7100f70d40bb073590aafa () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#49 0x00002aaab059f345 in SNPSle_294d108d9c21223f31bca47d22167e39 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#50 0x00002aaaae5014f7 in SNPSle_85eeb05ebf66d014 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#51 0x00002aaab0583c07 in SNPSle_ef9d4159d6b0a8c333e5eb1698de1f42 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#52 0x00002aaab33f7e9e in SNPSle_5e81f6b63a2a95636e35a4a9990f786f () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#53 0x00002aaab3496281 in SNPSle_65b053138f9c3b6cf22b15add8ae4e9a487a0ec4fda0cb22912f0f5520af875e () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#54 0x00002aaab345f19c in SNPSle_be8fe15a1f99cd13ee63243e4d02efff () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#55 0x00002aaab34382ef in SNPSle_94e9fbb8d738ab46cfd414ee54f1de5383273f4fb394e5b165dad2557df34756 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#56 0x00002aaab3439e8a in SNPSle_99d57af1703165c6de38b998ef9808a231246e37d17d6243 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#57 0x00002aaab2dee993 in SNPSle_e7e0abe4b23d7392dbe8eb40e096b1c1 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libuclinative.so
+#58 0x00002aaab343d4d6 in SNPSle_74e8e69f94d6825e49dd10c040695a4d5f6d533d7f5c326c () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#59 0x00002aaab3439dda in SNPSle_f3b6ab49e509e8f4f22acac1c6007a146d0d976c22056390 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#60 0x00002aaab343ebc3 in SNPSle_a09b4dc4f52ce1609672f8676eb959a4b083a1d380f86bf4 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsucli.so
+#61 0x00002aaab05672e5 in SNPSle_4a04c0fe7bbc29f5 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#62 0x00002aaab057b2f5 in SNPSle_e20d7017c7296ea3 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#63 0x00002aaaae376cfa in SNPSle_63c7abb936d47b07d29d61775f9dbe8c1486beb9213552a3 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#64 0x00002aaaae501d1f in SNPSle_490598bfebcc8e81efcf3d1815066cc9 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#65 0x00002aaaae51c691 in SNPSle_490598bfebcc8e81 () from /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvcsnew.so
+#66 0x00002aaaab92f0c3 in main () from /home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/03_GATE/simv.daidir/_cuarc0.so
+#67 0x00002aaab4214555 in __libc_start_main () from /lib64/libc.so.6
+#68 0x00000000004138f8 in _start ()

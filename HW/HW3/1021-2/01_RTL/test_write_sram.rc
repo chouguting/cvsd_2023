@@ -1,0 +1,96 @@
+Magic 271485
+Revision Verdi_T-2022.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 23 1920 1009 380 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/01_RTL/write_sram.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 10233839.554909 10308722.463037
+cursor 10272495.46606614441
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 17
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/01_RTL/write_sram.fsdb"
+addSignal -h 15 /test_sram_write/u_core/i_clk
+addSignal -h 15 -holdScope i_rst_n
+addSignal -h 15 -UNSIGNED -HEX -holdScope i_op_mode[3:0]
+addSignal -h 15 -holdScope i_op_valid
+addSignal -h 15 -holdScope o_op_ready
+addSignal -h 15 -UNSIGNED -UDEC -holdScope i_in_data[7:0]
+addSignal -h 15 -holdScope i_in_valid
+addSignal -h 15 -holdScope o_in_ready
+addSignal -h 15 -UNSIGNED -UDEC -holdScope current_state[4:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope next_state[4:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope counter0_value[11:0]
+addSignal -h 15 -holdScope reset_counter0
+addSignal -h 15 -holdScope count_counter0
+addSignal -h 15 -holdScope input_data_ready
+addSignal -h 15 -holdScope input_op_ready
+addSignal -h 15 -UNSIGNED -UDEC -holdScope data_for_output[13:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope output_data[13:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope o_out_data[13:0]
+addSignal -h 15 -holdScope o_out_valid
+addSignal -h 15 -holdScope output_valid
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sram0_addr[11:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sram0_data_in[7:0]
+addSignal -h 15 -holdScope sram0_chip_enable
+addSignal -h 15 -holdScope sram0_write_enable
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sram0_data_out[7:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/01_RTL/write_sram.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/test_sram_write"
+"/test_sram_write/u_core"
+
+SCOPE_LIST_BEGIN
+"/test_sram_write"
+"/test_sram_write/tests"
+"/test_sram_write/u_core"
+"/test_sram_write/u_core/FSM0"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

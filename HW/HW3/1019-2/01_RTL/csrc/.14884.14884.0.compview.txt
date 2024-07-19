@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1697553361.244640805, "rt":0.53, "ut":0.10, "st":0.06}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1697553360.745080767}
+{"VCS_COMP_START_TIME": 1697553360.745080767}
+{"VCS_COMP_END_TIME": 1697553361.877772342}
+{"VCS_USER_OPTIONS": "-f test_sram_erite.f -full64 -R -debug_access+all +v2k +notimingcheck"}
+{"vcs1": {"peak_mem": 313392}}

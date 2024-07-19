@@ -1,0 +1,136 @@
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Mon Nov 13 22:45:51 2023
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '../00_TESTBED/testfixture.v'
+Parsing design file './IOTDF.v'
+Parsing design file './inputReceiver.v'
+Parsing design file './desModule.v'
+Parsing design file './desKeyScheduler.v'
+Parsing design file './desFfunction.v'
+Parsing design file './outputModule.v'
+Parsing design file './crcModule.v'
+Parsing design file './binaryGrayConverter.v'
+Top Level Modules:
+       test
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+
+8 modules and 0 UDP read.
+recompiling module test
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1    _15824_archive_1.so _prev_archive_1.so _cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive       _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Nov 13 22:45 2023
+*Verdi* Loading libsscore_vcs202206.so
+FSDB Dumper for VCS, Release Verdi_T-2022.06, Linux x86_64/64bit, 05/29/2022
+(C) 1996 - 2022 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'IOTDF_F3.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+-----------------------------------------------------
+
+Start to Send IOT Data & Compare ...
+
+
+P00:  ** Correct!! ** , iot_out=00000000000000000000000000000003
+P01:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P02:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P03:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P04:  ** Correct!! ** , iot_out=00000000000000000000000000000007
+P05:  ** Correct!! ** , iot_out=00000000000000000000000000000001
+P06:  ** Correct!! ** , iot_out=00000000000000000000000000000003
+P07:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P08:  ** Correct!! ** , iot_out=00000000000000000000000000000001
+P09:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P10:  ** Correct!! ** , iot_out=00000000000000000000000000000001
+P11:  ** Correct!! ** , iot_out=00000000000000000000000000000003
+P12:  ** Correct!! ** , iot_out=00000000000000000000000000000007
+P13:  ** Correct!! ** , iot_out=00000000000000000000000000000003
+P14:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P15:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P16:  ** Correct!! ** , iot_out=00000000000000000000000000000007
+P17:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P18:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P19:  ** Correct!! ** , iot_out=00000000000000000000000000000007
+P20:  ** Correct!! ** , iot_out=00000000000000000000000000000001
+P21:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P22:  ** Correct!! ** , iot_out=00000000000000000000000000000001
+P23:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P24:  ** Correct!! ** , iot_out=00000000000000000000000000000001
+P25:  ** Correct!! ** , iot_out=00000000000000000000000000000003
+P26:  ** Correct!! ** , iot_out=00000000000000000000000000000007
+P27:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P28:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P29:  ** Correct!! ** , iot_out=00000000000000000000000000000005
+P30:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P31:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P32:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P33:  ** Correct!! ** , iot_out=00000000000000000000000000000001
+P34:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P35:  ** Correct!! ** , iot_out=00000000000000000000000000000005
+P36:  ** Correct!! ** , iot_out=00000000000000000000000000000005
+P37:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P38:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P39:  ** Correct!! ** , iot_out=00000000000000000000000000000001
+P40:  ** Correct!! ** , iot_out=00000000000000000000000000000007
+P41:  ** Correct!! ** , iot_out=00000000000000000000000000000005
+P42:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P43:  ** Correct!! ** , iot_out=00000000000000000000000000000003
+P44:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P45:  ** Correct!! ** , iot_out=00000000000000000000000000000001
+P46:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P47:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P48:  ** Correct!! ** , iot_out=00000000000000000000000000000005
+P49:  ** Correct!! ** , iot_out=00000000000000000000000000000005
+P50:  ** Correct!! ** , iot_out=00000000000000000000000000000007
+P51:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P52:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P53:  ** Correct!! ** , iot_out=00000000000000000000000000000003
+P54:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P55:  ** Correct!! ** , iot_out=00000000000000000000000000000001
+P56:  ** Correct!! ** , iot_out=00000000000000000000000000000005
+P57:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P58:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P59:  ** Correct!! ** , iot_out=00000000000000000000000000000001
+
+-----------------------------------------------------
+
+Congratulations! All data have been generated successfully!
+
+Total cost time:    6376.50 ns
+-------------------------PASS------------------------
+
+$finish called from file "../00_TESTBED/testfixture.v", line 302.
+$finish at simulation time               637650
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 6376500 ps
+CPU Time:      0.660 seconds;       Data structure size:   0.0Mb
+Mon Nov 13 22:46:00 2023
+CPU time: 1.005 seconds to compile + .698 seconds to elab + .514 seconds to link + .727 seconds in simulation

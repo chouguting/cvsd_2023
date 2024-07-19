@@ -1,0 +1,351 @@
+ 
+****************************************
+Report : clock_gating
+        -gating_elements
+Design : IOTDF
+Version: U-2022.12
+Date   : Mon Nov 13 23:46:40 2023
+****************************************
+
+Information: Identification of clock-gating cells has not been performed. Pre-existing clock-gating cells will not be reported. (PWR-947)
+--------------------------------------------------------------------------------
+                             Clock Gating Cell Report
+--------------------------------------------------------------------------------
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[0]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[0]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[0]/EN = N38 
+         input_receiver_0/clk_gate_input_parts_reg_reg[0]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[0]/ENCLK = net985 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[1]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[1]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[1]/EN = N39 
+         input_receiver_0/clk_gate_input_parts_reg_reg[1]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[1]/ENCLK = net991 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[2]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[2]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[2]/EN = N40 
+         input_receiver_0/clk_gate_input_parts_reg_reg[2]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[2]/ENCLK = net996 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[3]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[3]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[3]/EN = N41 
+         input_receiver_0/clk_gate_input_parts_reg_reg[3]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[3]/ENCLK = net1001 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[4]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[4]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[4]/EN = N42 
+         input_receiver_0/clk_gate_input_parts_reg_reg[4]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[4]/ENCLK = net1006 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[5]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[5]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[5]/EN = N43 
+         input_receiver_0/clk_gate_input_parts_reg_reg[5]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[5]/ENCLK = net1011 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[6]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[6]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[6]/EN = N44 
+         input_receiver_0/clk_gate_input_parts_reg_reg[6]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[6]/ENCLK = net1016 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[7]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[7]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[7]/EN = N45 
+         input_receiver_0/clk_gate_input_parts_reg_reg[7]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[7]/ENCLK = net1021 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[8]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[8]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[8]/EN = N46 
+         input_receiver_0/clk_gate_input_parts_reg_reg[8]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[8]/ENCLK = net1026 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[9]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[9]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[9]/EN = N47 
+         input_receiver_0/clk_gate_input_parts_reg_reg[9]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[9]/ENCLK = net1031 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[10]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[10]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[10]/EN = N48 
+         input_receiver_0/clk_gate_input_parts_reg_reg[10]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[10]/ENCLK = net1036 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[11]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[11]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[11]/EN = N49 
+         input_receiver_0/clk_gate_input_parts_reg_reg[11]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[11]/ENCLK = net1041 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[12]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[12]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[12]/EN = N50 
+         input_receiver_0/clk_gate_input_parts_reg_reg[12]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[12]/ENCLK = net1046 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[13]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[13]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[13]/EN = N51 
+         input_receiver_0/clk_gate_input_parts_reg_reg[13]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[13]/ENCLK = net1051 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[14]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[14]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[14]/EN = N52 
+         input_receiver_0/clk_gate_input_parts_reg_reg[14]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[14]/ENCLK = net1056 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_reg_reg[15]
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[15]/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_reg_reg[15]/EN = N53 
+         input_receiver_0/clk_gate_input_parts_reg_reg[15]/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_reg_reg[15]/ENCLK = net1061 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_parts_counter_value_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_parts_counter_value_reg/CLK = clk 
+         input_receiver_0/clk_gate_input_parts_counter_value_reg/EN = n2 
+         input_receiver_0/clk_gate_input_parts_counter_value_reg/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_parts_counter_value_reg/ENCLK = net1071 
+
+ Clock Gating Bank : input_receiver_0/clk_gate_input_128_reg_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         input_receiver_0/clk_gate_input_128_reg_reg/CLK = clk 
+         input_receiver_0/clk_gate_input_128_reg_reg/EN = n80 
+         input_receiver_0/clk_gate_input_128_reg_reg/TE = net986 
+
+     OUTPUTS :
+         input_receiver_0/clk_gate_input_128_reg_reg/ENCLK = net1076 
+
+ Clock Gating Bank : des_module_0/clk_gate_des_right_part_reg_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         des_module_0/clk_gate_des_right_part_reg_reg/CLK = clk 
+         des_module_0/clk_gate_des_right_part_reg_reg/EN = N95 
+         des_module_0/clk_gate_des_right_part_reg_reg/TE = net940 
+
+     OUTPUTS :
+         des_module_0/clk_gate_des_right_part_reg_reg/ENCLK = net939 
+
+ Clock Gating Bank : des_module_0/clk_gate_saved_main_key_reg_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         des_module_0/clk_gate_saved_main_key_reg_reg/CLK = clk 
+         des_module_0/clk_gate_saved_main_key_reg_reg/EN = save_main_key 
+         des_module_0/clk_gate_saved_main_key_reg_reg/TE = net940 
+
+     OUTPUTS :
+         des_module_0/clk_gate_saved_main_key_reg_reg/ENCLK = net950 
+
+ Clock Gating Bank : crc_module_0/clk_gate_saved_remainder_reg_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         crc_module_0/clk_gate_saved_remainder_reg_reg/CLK = clk 
+         crc_module_0/clk_gate_saved_remainder_reg_reg/EN = N150 
+         crc_module_0/clk_gate_saved_remainder_reg_reg/TE = net922 
+
+     OUTPUTS :
+         crc_module_0/clk_gate_saved_remainder_reg_reg/ENCLK = net921 
+
+ Clock Gating Bank : binary_gray_converter_0/clk_gate_converter_round_counter_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         binary_gray_converter_0/clk_gate_converter_round_counter_reg/CLK = clk 
+         binary_gray_converter_0/clk_gate_converter_round_counter_reg/EN = N595 
+         binary_gray_converter_0/clk_gate_converter_round_counter_reg/TE = net904 
+
+     OUTPUTS :
+         binary_gray_converter_0/clk_gate_converter_round_counter_reg/ENCLK = net903 
+
+ Clock Gating Bank : des_module_0/key_scheduler_0/clk_gate_key_reg_right_part_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         des_module_0/key_scheduler_0/clk_gate_key_reg_right_part_reg/CLK = clk 
+         des_module_0/key_scheduler_0/clk_gate_key_reg_right_part_reg/EN = N113 
+         des_module_0/key_scheduler_0/clk_gate_key_reg_right_part_reg/TE = net968 
+
+     OUTPUTS :
+         des_module_0/key_scheduler_0/clk_gate_key_reg_right_part_reg/ENCLK = net967 
+--------------------------------------------------------------------------------
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |       23         |
+          |                                       |                  |
+          |    Number of Gated registers          |   712 (83.67%)   |
+          |                                       |                  |
+          |    Number of Ungated registers        |   139 (16.33%)   |
+          |                                       |                  |
+          |    Total number of registers          |      851         |
+          ------------------------------------------------------------
+
+
+
+                             Clock Gating Report by Origin
+          +-------------------------------------------------+------------------+
+          |                                                 |    Actual (%)    |
+          |                                                 |    Count         |
+          +-------------------------------------------------+------------------+
+          |  Number of tool-inserted clock gating elements  |    23 (100.00%)  |
+          |                                                 |                  |
+          |  Number of pre-existing clock gating elements   |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of gated registers                      |   712 (83.67%)   |
+          |                                                 |                  |
+          |  Number of tool-inserted gated registers        |   712 (83.67%)   |
+          |                                                 |                  |
+          |  Number of pre-existing gated registers         |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of ungated registers                    |   139 (16.33%)   |
+          |                                                 |                  |
+          |  Number of registers                            |      851         |
+          +-------------------------------------------------+------------------+
+
+
+
+1

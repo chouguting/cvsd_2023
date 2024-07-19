@@ -1,0 +1,957 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                 Version U-2022.12 for linux64 - Nov 22, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# Setting environment
+sh mkdir -p Netlist
+sh mkdir -p Report
+set company {NTUGIEE}
+NTUGIEE
+set designer {Student}
+Student
+set search_path      ". /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db  ../sram_256x8 ../sram_512x8 ../sram_4096x8 $search_path ../ ./"
+. /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db  ../sram_256x8 ../sram_512x8 ../sram_4096x8 . /usr/cad/synopsys/synthesis/cur/libraries/syn /usr/cad/synopsys/synthesis/cur/dw/syn_ver /usr/cad/synopsys/synthesis/cur/dw/sim_ver ../ ./
+set target_library   "slow.db                 \
+                      sram_256x8_slow_syn.db  \
+                      sram_512x8_slow_syn.db  \
+                      sram_4096x8_slow_syn.db \
+                     "
+slow.db                  sram_256x8_slow_syn.db   sram_512x8_slow_syn.db   sram_4096x8_slow_syn.db  
+set link_library     "* $target_library dw_foundation.sldb"
+* slow.db                  sram_256x8_slow_syn.db   sram_512x8_slow_syn.db   sram_4096x8_slow_syn.db   dw_foundation.sldb
+set symbol_library   "tsmc13.sdb generic.sdb"
+tsmc13.sdb generic.sdb
+set synthetic_library "dw_foundation.sldb"
+dw_foundation.sldb
+set default_schematic_options {-size infinite}
+-size infinite
+# Import Design
+set DESIGN "core"
+core
+set hdlin_translate_off_skip_text "TRUE"
+Information: Variable 'hdlin_translate_off_skip_text' is obsolete and is being ignored. (INFO-100)
+TRUE
+set edifout_netlist_only "TRUE"
+TRUE
+set verilogout_no_tri true
+true
+set hdlin_enable_presto_for_vhdl "TRUE"
+Information: Variable 'hdlin_enable_presto_for_vhdl' is obsolete and is being ignored. (INFO-100)
+Information: Variable 'hdlin_enable_presto_for_vhdl' is obsolete and is being ignored. (INFO-100)
+TRUE
+set sh_enable_line_editing true
+true
+set sh_line_editing_mode emacs
+emacs
+history keep 100
+100
+alias h history
+analyze -format sverilog "flist.sv"
+Running PRESTO HDLC
+Compiling source file ./flist.sv
+Opening include file ../01_RTL/core.v
+Opening include file ../01_RTL/memoryManagementUnit.v
+Opening include file ../01_RTL/indexConverter.v
+Opening include file ../01_RTL/convolutionEngine.v
+Opening include file ../01_RTL/medianFinder.v
+Opening include file ../01_RTL/arctangentApproximator.v
+Presto compilation completed successfully.
+Loading db file '/home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db'
+Loading db file '/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/sram_256x8/sram_256x8_slow_syn.db'
+Loading db file '/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/sram_512x8/sram_512x8_slow_syn.db'
+Loading db file '/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/sram_4096x8/sram_4096x8_slow_syn.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+1
+elaborate $DESIGN
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'sram_256x8'
+  Loading link library 'sram_512x8'
+  Loading link library 'sram_4096x8'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 277 in file
+	'../01_RTL/core.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           341            |     no/auto      |
+|           358            |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+	in routine core line 194 in file
+		'../01_RTL/core.v'.
+=============================================================================================
+|           Register Name           |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=============================================================================================
+|        channel_window_reg         | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|        channel_window_reg         | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      i_op_valid_delayed_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|       i_op_mode_delayed_reg       | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      i_in_valid_delayed_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|       i_in_data_delayed_reg       | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     o_op_ready_output_reg_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    o_out_valid_output_reg_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     o_out_data_output_reg_reg     | Flip-flop |  14   |  Y  | N  | Y  | N  | N  | N  | N  |
+|         current_state_reg         | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|          output_data_reg          | Flip-flop |  14   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        counter0_value_reg         | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        counter_x_value_reg        | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        counter_y_value_reg        | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     counter_channel_value_reg     | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+| last_last_output_valid_result_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   last_output_valid_result_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  last_counter_channel_value_reg   | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|           origin_x_reg            | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|           origin_x_reg            | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|           origin_y_reg            | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|           origin_y_reg            | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+=============================================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|     core/465     |   16   |    8    |      4       |
+======================================================
+Presto compilation completed successfully. (core)
+Elaborated 1 design.
+Current design is now 'core'.
+Information: Building the design 'memoryManagementUnit'. (HDL-193)
+
+Statistics for case statements in always block at line 338 in file
+	'../01_RTL/memoryManagementUnit.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           449            |     no/auto      |
+|           706            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine memoryManagementUnit line 313 in file
+		'../01_RTL/memoryManagementUnit.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| counter0_value_reg  | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  current_state_reg  | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (memoryManagementUnit)
+Information: Building the design 'convolutionEngine'. (HDL-193)
+Warning:  ../01_RTL/convolutionEngine.v:247: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/convolutionEngine.v:249: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/convolutionEngine.v:250: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/convolutionEngine.v:252: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/convolutionEngine.v:253: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/convolutionEngine.v:255: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/convolutionEngine.v:257: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/convolutionEngine.v:258: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/convolutionEngine.v:259: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/convolutionEngine.v:263: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/convolutionEngine.v:264: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/convolutionEngine.v:265: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/convolutionEngine.v:284: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/convolutionEngine.v:285: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/convolutionEngine.v:775: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/convolutionEngine.v:805: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/convolutionEngine.v:835: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../01_RTL/convolutionEngine.v:865: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 452 in file
+	'../01_RTL/convolutionEngine.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           512            |     no/auto      |
+|           520            |     no/auto      |
+|           751            |    auto/auto     |
+|           753            |    auto/auto     |
+|           783            |    auto/auto     |
+|           813            |    auto/auto     |
+|           843            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine convolutionEngine line 329 in file
+		'../01_RTL/convolutionEngine.v'.
+===========================================================================================
+|          Register Name          |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================================
+| median_result_counter_value_reg | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        current_state_reg        | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      line_buffer_sram_reg       | Flip-flop | 1408  |  Y  | N  | Y  | N  | N  | N  | N  |
+|      saved_conv_result_reg      | Flip-flop |  72   |  Y  | N  | Y  | N  | N  | N  | N  |
+| sobel_result_counter_value_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     saved_sobel_degree_reg      | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     saved_median_result_reg     | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+|     saved_sobel_result_reg      | Flip-flop |  224  |  Y  | N  | Y  | N  | N  | N  | N  |
+|    x_index_counter_value_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    y_index_counter_value_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       counter0_value_reg        | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  conv_result_counter_value_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===========================================================================================
+Statistics for MUX_OPs
+===========================================================
+|   block name/line     | Inputs | Outputs | # sel inputs |
+===========================================================
+| convolutionEngine/169 |   4    |   18    |      2       |
+| convolutionEngine/692 |   4    |   32    |      2       |
+| convolutionEngine/692 |   4    |    8    |      2       |
+| convolutionEngine/753 |   4    |   16    |      2       |
+| convolutionEngine/753 |   4    |    4    |      2       |
+| convolutionEngine/755 |   4    |   56    |      2       |
+| convolutionEngine/755 |   4    |   56    |      2       |
+| convolutionEngine/755 |   4    |   14    |      2       |
+===========================================================
+Presto compilation completed successfully. (convolutionEngine)
+Information: Building the design 'indexConverter'. (HDL-193)
+Presto compilation completed successfully. (indexConverter)
+Information: Building the design 'medianFinder'. (HDL-193)
+Presto compilation completed successfully. (medianFinder)
+Information: Building the design 'arctangentApproximator'. (HDL-193)
+Warning:  ../01_RTL/arctangentApproximator.v:30: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/arctangentApproximator.v:31: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/arctangentApproximator.v:67: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/arctangentApproximator.v:69: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/arctangentApproximator.v:71: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/arctangentApproximator.v:73: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/arctangentApproximator.v:75: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/arctangentApproximator.v:77: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/arctangentApproximator.v:79: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/arctangentApproximator.v:81: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully. (arctangentApproximator)
+Information: Building the design 'ComparatorSorter'. (HDL-193)
+Presto compilation completed successfully. (ComparatorSorter)
+1
+current_design [get_designs $DESIGN]
+Current design is 'core'.
+{core}
+link
+
+  Linking design 'core'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (7 designs)               /home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/02_SYN/core.db, etc
+  slow (library)              /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db
+  sram_256x8 (library)        /home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/sram_256x8/sram_256x8_slow_syn.db
+  sram_512x8 (library)        /home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/sram_512x8/sram_512x8_slow_syn.db
+  sram_4096x8 (library)       /home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/sram_4096x8/sram_4096x8_slow_syn.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+source -echo -verbose ./core_dc.sdc
+# operating conditions and boundary conditions #
+set cycle  10.0;  # modify your clock cycle here #
+10.0
+create_clock -period $cycle [get_ports  i_clk]
+1
+set_dont_touch_network      [get_clocks i_clk]
+1
+set_fix_hold                [get_clocks i_clk]
+1
+set_ideal_network           [get_ports i_clk]
+1
+set_clock_uncertainty  0.1  [get_clocks i_clk]
+1
+set_clock_latency      0.5  [get_clocks i_clk]
+1
+set_input_delay  [ expr $cycle*0.5 ] -clock i_clk [all_inputs]
+1
+set_output_delay [ expr $cycle*0.5 ] -clock i_clk [all_outputs] 
+1
+set_load         0.05     [all_outputs]
+1
+set_operating_conditions  -max_library slow -max slow
+Using operating conditions 'slow' found in library 'slow'.
+1
+set_wire_load_model -name tsmc13_wl10 -library slow                        
+1
+set_max_fanout 20 [all_inputs]
+1
+1
+# Compile Design
+current_design [get_designs ${DESIGN}]
+Current design is 'core'.
+{core}
+check_design > Report/check_design.txt
+check_timing > Report/check_timing.txt
+#set high_fanout_net_threshold 0
+uniquify
+Information: Uniquified 4 instances of design 'medianFinder'. (OPT-1056)
+Information: Uniquified 4 instances of design 'arctangentApproximator'. (OPT-1056)
+Information: Uniquified 76 instances of design 'ComparatorSorter'. (OPT-1056)
+1
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+compile_ultra -retime
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | U-2022.12-DWBB_202212.0 |     *     |
+| Licensed DW Building Blocks        | U-2022.12-DWBB_202212.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Comand Line  | compile_ultra -retime                                                             |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 5889                                   |
+| Number of User Hierarchies                              | 87                                     |
+| Sequential Cell Count                                   | 2043                                   |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 1064                                   |
+| Number of Dont Touch Nets                               | 3                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Information: There are 70 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'core'
+
+  Loading target library 'sram_256x8'
+  Loading target library 'sram_512x8'
+  Loading target library 'sram_4096x8'
+Loaded alib file './alib-52/slow.db.alib'
+Loaded alib file './alib-52/sram_256x8_slow_syn.db.alib' (placeholder)
+Loaded alib file './alib-52/sram_512x8_slow_syn.db.alib' (placeholder)
+Loaded alib file './alib-52/sram_4096x8_slow_syn.db.alib' (placeholder)
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy mmu0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mmu0/iConv0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_sobel_degree[0].arctan_approx before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_sobel_degree[3].arctan_approx before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_sobel_degree[2].arctan_approx before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_sobel_degree[1].arctan_approx before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c19 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c18 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c17 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c15 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c14 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c13 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c12 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c11 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c10 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c9 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c7 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c6 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c5 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c4 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[3].medianFinder0/c1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c19 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c18 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c17 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c15 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c14 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c13 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c12 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c11 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c10 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c9 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c7 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c6 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c5 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c4 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[2].medianFinder0/c1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c19 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c18 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c17 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c15 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c14 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c13 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c12 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c11 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c10 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c9 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c7 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c6 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c5 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c4 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[1].medianFinder0/c1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c19 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c18 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c17 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c15 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c14 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c13 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c12 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c11 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c10 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c9 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c7 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c6 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c5 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c4 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy convEngin0/generate_median_finder[0].medianFinder0/c2 before Pass 1 (OPT-776)
+Information: Ungrouping 86 of 88 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'convolutionEngine'
+Information: Added key list 'DesignWare' to design 'convolutionEngine'. (DDB-72)
+Information: The register 'current_state_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'saved_conv_result_reg[0][17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'saved_conv_result_reg[1][17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'saved_conv_result_reg[2][17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'saved_conv_result_reg[3][17]' is a constant and will be removed. (OPT-1206)
+ Implement Synthetic for 'convolutionEngine'.
+  Processing 'core'
+Information: Added key list 'DesignWare' to design 'core'. (DDB-72)
+Information: The register 'output_data_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'output_data_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'output_data_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'output_data_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'output_data_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'output_data_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mmu0/current_state_reg[4]' is a constant and will be removed. (OPT-1206)
+ Implement Synthetic for 'core'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Complementing port 'o_mmu_bank_select' in design 'convolutionEngine'.
+	 The new name of the port is 'o_mmu_bank_select_BAR'. (OPT-319)
+Information: The register 'convEngin0/saved_conv_result_reg[3][16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_conv_result_reg[2][16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_conv_result_reg[0][16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_conv_result_reg[1][16]' is a constant and will be removed. (OPT-1206)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Updating design information... (UID-85)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+  Mapping Optimization (Phase 6)
+  Mapping Optimization (Phase 7)
+  Mapping Optimization (Phase 8)
+  Mapping Optimization (Phase 9)
+  Mapping Optimization (Phase 10)
+  Mapping Optimization (Phase 11)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:03:33  857203.8      0.00       0.0    1322.7                           673147520.0000      0.00  
+    0:03:34  854428.6      1.12      34.3    1419.7                           670919552.0000      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:03:38  851997.9      0.00       0.0    1336.6                           669913024.0000      0.00  
+    0:03:39  850887.8      0.00       0.0    1336.6                           669053248.0000      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Mapping 'convolutionEngine_DP_OP_1689J1_122_4157_2'
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:04:06  601478.7      1.50     196.4     594.6                           427097856.0000      0.00  
+    0:04:13  605581.3      0.00       0.0     618.6                           431393952.0000      0.00  
+    0:04:13  605581.3      0.00       0.0     618.6                           431393952.0000      0.00  
+    0:04:14  605567.7      0.12       1.1     616.7                           431389184.0000      0.00  
+Information: The register 'convEngin0/saved_sobel_result_reg[0][2][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[2][2][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[1][2][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[3][2][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[3][2][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[0][2][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[2][2][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[2][2][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[1][2][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[3][2][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[0][2][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[1][2][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[0][1][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[2][1][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[1][1][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[0][1][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[3][1][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[1][1][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[3][1][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[0][1][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[3][1][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[2][1][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[2][1][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[1][1][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[0][3][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[1][3][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[2][3][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[0][3][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[3][3][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[2][3][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[3][3][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[0][3][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[3][3][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[1][3][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[2][3][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[1][3][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[0][0][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[2][0][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[1][0][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[3][0][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[3][0][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[0][0][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[2][0][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[1][0][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[1][0][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[3][0][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[0][0][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'convEngin0/saved_sobel_result_reg[2][0][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'o_out_data_output_reg_reg[13]' is a constant and will be removed. (OPT-1206)
+    0:04:21  600356.7      0.53      10.8     610.3                           426914848.0000      0.00  
+    0:04:22  599676.0      0.53      10.8     706.4                           426556416.0000      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:04:38  595707.5      0.35       5.4     596.6                           423047072.0000      0.00  
+    0:04:38  594930.1      0.35       4.4     594.9                           422485376.0000      0.00  
+    0:04:38  594880.9      0.00       0.0     624.0                           422496864.0000      0.00  
+    0:04:38  594880.9      0.00       0.0     624.0                           422496864.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:04:41  591554.0      0.00       0.0     593.6                           419238560.0000      0.00  
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:04:42  591694.8      0.00       0.0       0.0                           419327872.0000      0.00  
+    0:04:42  591694.8      0.00       0.0       0.0                           419327872.0000      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:04:42  591694.8      0.00       0.0       0.0                           419327872.0000      0.00  
+    0:04:44  591144.9      0.00       0.0    1033.9                           418785184.0000      0.00  
+    0:04:44  591144.9      0.00       0.0    1033.9                           418785184.0000      0.00  
+    0:04:44  591144.9      0.00       0.0    1033.9                           418785184.0000      0.00  
+    0:04:47  590652.6      0.02       0.2     811.9                           416025152.0000      0.00  
+    0:04:47  590652.6      0.02       0.2     811.9                           416025152.0000      0.00  
+    0:04:56  593000.1      0.00       0.0     813.4                           418147168.0000      0.00  
+    0:04:56  593000.1      0.00       0.0     813.4                           418147168.0000      0.00  
+    0:04:56  593008.6      0.00       0.0     813.4                           418160704.0000      0.00  
+    0:04:56  593008.6      0.00       0.0     813.4                           418160704.0000      0.00  
+    0:04:56  593008.6      0.00       0.0     813.4                           418160704.0000      0.00  
+    0:04:56  593008.6      0.00       0.0     813.4                           418160704.0000      0.00  
+    0:04:56  593008.6      0.00       0.0     813.4                           418160704.0000      0.00  
+    0:04:56  593008.6      0.00       0.0     813.4                           418160704.0000      0.00  
+    0:04:56  593008.6      0.00       0.0     813.4                           418160704.0000      0.00  
+    0:04:56  593008.6      0.00       0.0     813.4                           418160704.0000      0.00  
+    0:04:56  593008.6      0.00       0.0     813.4                           418160704.0000      0.00  
+    0:04:56  593008.6      0.00       0.0     813.4                           418160704.0000      0.00  
+    0:04:56  593008.6      0.00       0.0     813.4                           418160704.0000      0.00  
+    0:04:56  593008.6      0.00       0.0     813.4                           418160704.0000      0.00  
+    0:04:56  593008.6      0.00       0.0     813.4                           418160704.0000      0.00  
+    0:04:56  593008.6      0.00       0.0     813.4                           418160704.0000      0.00  
+    0:04:56  593008.6      0.00       0.0     813.4                           418160704.0000      0.00  
+    0:04:56  593012.0      0.00       0.0     813.4                           418162176.0000      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:04:57  593012.0      0.00       0.0     813.4                           418162176.0000      0.00  
+    0:05:02  581137.0      0.00       0.0     812.7                           404994624.0000      0.00  
+    0:05:02  581137.0      0.00       0.0     812.7                           404994624.0000      0.00  
+    0:05:02  581137.0      0.00       0.0     812.7                           404994624.0000      0.00  
+    0:05:04  580746.6      0.00       0.0     812.7                           404390528.0000      0.00  
+    0:05:10  578799.7      0.00       0.0     532.2 convEngin0/net105940      402022144.0000      0.00  
+    0:05:10  578837.0      0.00       0.0       0.0                           402004288.0000      0.00  
+    0:05:10  578837.0      0.00       0.0       0.0                           402004288.0000      0.00  
+    0:05:10  578837.0      0.00       0.0       0.0                           402004288.0000      0.00  
+    0:05:10  578837.0      0.00       0.0       0.0                           402004288.0000      0.00  
+    0:05:10  578837.0      0.00       0.0       0.0                           402004288.0000      0.00  
+    0:05:10  578837.0      0.00       0.0       0.0                           402004288.0000      0.00  
+    0:05:24  564908.2      0.00       0.0      33.4                           389210560.0000      0.00  
+Loading db file '/home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db'
+Loading db file '/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/sram_256x8/sram_256x8_slow_syn.db'
+Loading db file '/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/sram_512x8/sram_512x8_slow_syn.db'
+Loading db file '/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/sram_4096x8/sram_4096x8_slow_syn.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'core' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'i_clk': 2038 load(s), 1 driver(s)
+  Loading target library 'sram_256x8'
+  Loading target library 'sram_512x8'
+  Loading target library 'sram_4096x8'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated black box outputs. (PWR-428)
+1
+# Report Output
+current_design [get_designs ${DESIGN}]
+Current design is 'core'.
+{core}
+report_timing > "./Report/${DESIGN}_syn.timing"
+report_area > "./Report/${DESIGN}_syn.area"
+report_qor > "./Report/${DESIGN}_syn.qor"
+all_high_fanout -net -threshold 500 > Report/all_high_fanout_greater_than_500.txt
+report_net_fanout -verbose -high_fanout > Report/report_net_fanout.txt
+# report_constraint -verbose > Report/report_constraint.txt
+# Output Design
+current_design [get_designs ${DESIGN}]
+Current design is 'core'.
+{core}
+set bus_inference_style {%s[%d]}
+%s[%d]
+set bus_naming_style {%s[%d]}
+%s[%d]
+set hdlout_internal_busses true
+true
+change_names -hierarchy -rule verilog
+1
+define_name_rules name_rule -allowed {a-z A-Z 0-9 _} -max_length 255 -type cell
+1
+define_name_rules name_rule -allowed {a-z A-Z 0-9 _[]} -max_length 255 -type net
+1
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
+1
+define_name_rules name_rule -case_insensitive
+1
+change_names -hierarchy -rules name_rule
+1
+remove_unconnected_ports -blast_buses [get_cells -hierarchical *]
+Removing port 'o_output_data[13]' from design 'convolutionEngine'
+1
+set verilogout_higher_designs_first true
+true
+write -format ddc     -hierarchy -output "./Netlist/${DESIGN}_syn.ddc"
+Writing ddc file './Netlist/core_syn.ddc'.
+1
+write -format verilog -hierarchy -output "./Netlist/${DESIGN}_syn.v"
+Writing verilog file '/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/02_SYN/Netlist/core_syn.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+write_sdf -version 2.1  -context verilog -load_delay cell ./Netlist/${DESIGN}_syn.sdf
+Information: Writing timing information to file '/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/02_SYN/Netlist/core_syn.sdf'. (WT-3)
+1
+write_sdc  ./Netlist/${DESIGN}_syn.sdc -version 1.8
+1
+report_timing
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : core
+Version: U-2022.12
+Date   : Mon Nov  6 01:33:19 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: convEngin0/line_buffer_sram_reg_0__10__4_
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: convEngin0/saved_median_result_reg_0__0__6_
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core               tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  convEngin0/line_buffer_sram_reg_0__10__4_/CK (DFFRX4)
+                                                          0.00 #     0.50 r
+  convEngin0/line_buffer_sram_reg_0__10__4_/Q (DFFRX4)
+                                                          0.60       1.10 f
+  convEngin0/U4537/Y (NOR2X4)                             0.15       1.25 r
+  convEngin0/U4538/Y (NOR3X4)                             0.11       1.36 f
+  convEngin0/U4539/Y (NOR2X4)                             0.11       1.47 r
+  convEngin0/U2397/Y (NAND3X4)                            0.12       1.59 f
+  convEngin0/U2390/Y (NAND2X6)                            0.10       1.69 r
+  convEngin0/U2373/Y (INVX12)                             0.09       1.77 f
+  convEngin0/U4551/Y (INVX16)                             0.11       1.88 r
+  convEngin0/U4554/Y (MXI2X8)                             0.19       2.07 f
+  convEngin0/U4555/Y (OAI2BB1X2)                          0.13       2.19 r
+  convEngin0/U2313/Y (NAND3X2)                            0.13       2.32 f
+  convEngin0/U4563/Y (NAND3X4)                            0.12       2.45 r
+  convEngin0/U1782/Y (NAND3X4)                            0.10       2.55 f
+  convEngin0/U1778/Y (NAND2X4)                            0.10       2.65 r
+  convEngin0/U2267/Y (NAND2X6)                            0.08       2.73 f
+  convEngin0/U1760/Y (INVX12)                             0.11       2.84 r
+  convEngin0/U4578/Y (INVX20)                             0.08       2.93 f
+  convEngin0/U1093/Y (MXI2X6)                             0.18       3.11 f
+  convEngin0/U4596/Y (AOI2BB2X4)                          0.21       3.32 r
+  convEngin0/U1054/Y (OR2X4)                              0.18       3.50 r
+  convEngin0/U2731/Y (NAND2X4)                            0.09       3.59 f
+  convEngin0/U1653/Y (NAND2X6)                            0.10       3.68 r
+  convEngin0/U2104/Y (INVX12)                             0.08       3.76 f
+  convEngin0/U4666/Y (INVX20)                             0.12       3.88 r
+  convEngin0/U4667/Y (MXI2X8)                             0.20       4.08 r
+  convEngin0/U1613/Y (INVX8)                              0.09       4.17 f
+  convEngin0/U4670/Y (NAND2X6)                            0.08       4.26 r
+  convEngin0/U1610/Y (NAND3X6)                            0.09       4.35 f
+  convEngin0/U1604/Y (NAND4X4)                            0.11       4.46 r
+  convEngin0/U4691/Y (NAND3X6)                            0.11       4.57 f
+  convEngin0/U4700/Y (NAND2X8)                            0.09       4.67 r
+  convEngin0/U4701/Y (INVX16)                             0.08       4.75 f
+  convEngin0/U917/Y (INVX12)                              0.08       4.83 r
+  convEngin0/U912/Y (MXI2X4)                              0.18       5.01 r
+  convEngin0/U4763/Y (NAND2X2)                            0.14       5.15 f
+  convEngin0/U831/Y (NAND3X4)                             0.17       5.32 r
+  convEngin0/U4771/Y (NAND3X6)                            0.11       5.43 f
+  convEngin0/U3832/Y (NAND3X6)                            0.08       5.51 r
+  convEngin0/U3831/Y (AND2X8)                             0.15       5.66 r
+  convEngin0/U3830/Y (INVX20)                             0.07       5.73 f
+  convEngin0/U2530/Y (MXI2X4)                             0.15       5.88 r
+  convEngin0/U4793/Y (NAND2X2)                            0.14       6.02 f
+  convEngin0/U4798/Y (NAND2X4)                            0.12       6.14 r
+  convEngin0/U3823/Y (NAND3X6)                            0.10       6.24 f
+  convEngin0/U3822/Y (NAND3X6)                            0.08       6.32 r
+  convEngin0/U553/Y (NAND3X4)                             0.11       6.43 f
+  convEngin0/U3826/Y (AND3X8)                             0.17       6.60 f
+  convEngin0/U3821/Y (INVX20)                             0.09       6.69 r
+  convEngin0/U4877/Y (MXI2X4)                             0.20       6.89 r
+  convEngin0/U4879/Y (NOR2X2)                             0.14       7.03 f
+  convEngin0/U441/Y (NOR3X2)                              0.25       7.28 r
+  convEngin0/U1938/Y (NAND3X4)                            0.15       7.44 f
+  convEngin0/U1934/Y (NAND2X6)                            0.10       7.54 r
+  convEngin0/U1933/Y (INVX12)                             0.07       7.61 f
+  convEngin0/U3801/Y (INVX12)                             0.10       7.71 r
+  convEngin0/U1928/Y (MXI2X4)                             0.24       7.95 r
+  convEngin0/U1561/Y (INVX6)                              0.09       8.04 f
+  convEngin0/U4952/Y (NAND2X4)                            0.09       8.13 r
+  convEngin0/U4953/Y (OAI21X4)                            0.09       8.22 f
+  convEngin0/U3817/Y (NAND2X4)                            0.10       8.32 r
+  convEngin0/U3816/Y (AND3X8)                             0.18       8.49 r
+  convEngin0/U2487/Y (INVX16)                             0.08       8.57 f
+  convEngin0/U4958/Y (MXI2X2)                             0.25       8.83 r
+  convEngin0/U4959/Y (INVX4)                              0.15       8.97 f
+  convEngin0/U4962/Y (NAND2X1)                            0.17       9.14 r
+  convEngin0/U1919/Y (OAI2BB1X2)                          0.20       9.34 r
+  convEngin0/U1918/Y (AND2X6)                             0.15       9.49 r
+  convEngin0/U3802/Y (NAND2X8)                            0.16       9.65 f
+  convEngin0/U4217/Y (NAND2X2)                            0.15       9.80 r
+  convEngin0/U3922/Y (NAND2X4)                            0.14       9.94 f
+  convEngin0/U12111/Y (MXI2X1)                            0.24      10.18 r
+  convEngin0/saved_median_result_reg_0__0__6_/D (DFFRX2)
+                                                          0.00      10.18 r
+  data arrival time                                                 10.18
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  convEngin0/saved_median_result_reg_0__0__6_/CK (DFFRX2)
+                                                          0.00      10.40 r
+  library setup time                                     -0.21      10.19
+  data required time                                                10.19
+  --------------------------------------------------------------------------
+  data required time                                                10.19
+  data arrival time                                                -10.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
+report_area
+ 
+****************************************
+Report : area
+Design : core
+Version: U-2022.12
+Date   : Mon Nov  6 01:33:19 2023
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db)
+    sram_256x8 (File: /home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/sram_256x8/sram_256x8_slow_syn.db)
+
+Number of ports:                          201
+Number of nets:                         18578
+Number of cells:                        15230
+Number of combinational cells:          13182
+Number of sequential cells:              2022
+Number of macros/black boxes:              16
+Number of buf/inv:                       2004
+Number of references:                      82
+
+Combinational area:             162879.108891
+Buf/Inv area:                    10411.851506
+Noncombinational area:           69070.598988
+Macro/Black Box area:           332958.468750
+Net Interconnect area:         1766109.085602
+
+Total cell area:                564908.176629
+Total area:                    2331017.262231
+1
+check_design
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12
+Date:        Mon Nov  6 01:33:19 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Nets                                                                2
+    Unloaded nets (LINT-2)                                          1
+    Undriven nets (LINT-3)                                          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'core', net 'SYNOPSYS_UNCONNECTED_1' driven by pin ' (no pin) ' has no loads. (LINT-2)
+Warning: In design 'core', net 'SYNOPSYS_UNCONNECTED_1' has no drivers.  Logic 0 assumed. (LINT-3)
+1
+exit
+
+Memory usage for this session 285 Mbytes.
+Memory usage for this session including child processes 321 Mbytes.
+CPU usage for this session 335 seconds ( 0.09 hours ).
+Elapsed time for this session 361 seconds ( 0.10 hours ).
+
+Thank you...

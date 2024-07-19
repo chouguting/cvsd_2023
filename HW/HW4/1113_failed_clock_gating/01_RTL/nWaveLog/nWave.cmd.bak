@@ -1,0 +1,325 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/home/raid7_2/user12/r2921a01/hw/hw4/1121_hw4/01_RTL/IOTDF_F5.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/test"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF"
+wvGetSignalSetScope -win $_nWave1 "/test"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF/binary_gray_converter_0"
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_IOTDF/binary_gray_converter_0/clk} \
+{/test/u_IOTDF/binary_gray_converter_0/converter_start} \
+{/test/u_IOTDF/binary_gray_converter_0/current_state\[1:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/rst} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_IOTDF/binary_gray_converter_0/clk} \
+{/test/u_IOTDF/binary_gray_converter_0/converter_start} \
+{/test/u_IOTDF/binary_gray_converter_0/current_state\[1:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/rst} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvGetSignalClose -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/test"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF/binary_gray_converter_0"
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_IOTDF/binary_gray_converter_0/clk} \
+{/test/u_IOTDF/binary_gray_converter_0/rst} \
+{/test/u_IOTDF/binary_gray_converter_0/converter_start} \
+{/test/u_IOTDF/binary_gray_converter_0/current_state\[1:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_input\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_output\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/next_xor_carry} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_in} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_reg} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 5 6 7 8 9 )} 
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_IOTDF/binary_gray_converter_0/clk} \
+{/test/u_IOTDF/binary_gray_converter_0/rst} \
+{/test/u_IOTDF/binary_gray_converter_0/converter_start} \
+{/test/u_IOTDF/binary_gray_converter_0/current_state\[1:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_input\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_output\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/next_xor_carry} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_in} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_reg} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 5 6 7 8 9 )} 
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/test"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF/binary_gray_converter_0"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF/binary_gray_converter_0"
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_IOTDF/binary_gray_converter_0/clk} \
+{/test/u_IOTDF/binary_gray_converter_0/rst} \
+{/test/u_IOTDF/binary_gray_converter_0/converter_start} \
+{/test/u_IOTDF/binary_gray_converter_0/current_state\[1:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_input\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_output\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/next_xor_carry} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_in} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/reset_xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/save_xor_carry_reg} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 10 11 )} 
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_IOTDF/binary_gray_converter_0/clk} \
+{/test/u_IOTDF/binary_gray_converter_0/rst} \
+{/test/u_IOTDF/binary_gray_converter_0/converter_start} \
+{/test/u_IOTDF/binary_gray_converter_0/current_state\[1:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_input\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_output\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/next_xor_carry} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_in} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/reset_xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/save_xor_carry_reg} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 10 11 )} 
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvGetSignalClose -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/test"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF/binary_gray_converter_0"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF/binary_gray_converter_0"
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_IOTDF/binary_gray_converter_0/clk} \
+{/test/u_IOTDF/binary_gray_converter_0/rst} \
+{/test/u_IOTDF/binary_gray_converter_0/converter_start} \
+{/test/u_IOTDF/binary_gray_converter_0/mode} \
+{/test/u_IOTDF/binary_gray_converter_0/current_state\[1:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_input\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_output\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/next_xor_carry} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_in} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/reset_xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/save_xor_carry_reg} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_IOTDF/binary_gray_converter_0/clk} \
+{/test/u_IOTDF/binary_gray_converter_0/rst} \
+{/test/u_IOTDF/binary_gray_converter_0/converter_start} \
+{/test/u_IOTDF/binary_gray_converter_0/mode} \
+{/test/u_IOTDF/binary_gray_converter_0/current_state\[1:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_input\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_output\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/next_xor_carry} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_in} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/reset_xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/save_xor_carry_reg} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvGetSignalClose -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/test"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF/binary_gray_converter_0"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF/binary_gray_converter_0"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF"
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_IOTDF/binary_gray_converter_0/clk} \
+{/test/u_IOTDF/binary_gray_converter_0/rst} \
+{/test/u_IOTDF/fn_sel\[2:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/converter_start} \
+{/test/u_IOTDF/binary_gray_converter_0/mode} \
+{/test/u_IOTDF/binary_gray_converter_0/current_state\[1:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_input\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_output\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/next_xor_carry} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_in} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/reset_xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/save_xor_carry_reg} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_IOTDF/binary_gray_converter_0/clk} \
+{/test/u_IOTDF/binary_gray_converter_0/rst} \
+{/test/u_IOTDF/fn_sel\[2:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/converter_start} \
+{/test/u_IOTDF/binary_gray_converter_0/mode} \
+{/test/u_IOTDF/binary_gray_converter_0/current_state\[1:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_input\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_output\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/next_xor_carry} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_in} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/reset_xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/save_xor_carry_reg} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvGetSignalClose -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvExpandBus -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvCollapseBus -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvGetSignalOpen -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_IOTDF/binary_gray_converter_0/clk} \
+{/test/u_IOTDF/binary_gray_converter_0/rst} \
+{/test/u_IOTDF/fn_sel\[2:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/mode} \
+{/test/u_IOTDF/binary_gray_converter_0/converter_start} \
+{/test/u_IOTDF/binary_gray_converter_0/current_state\[1:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_input\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_output\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/next_xor_carry} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_in} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/reset_xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/save_xor_carry_reg} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_IOTDF/binary_gray_converter_0/clk} \
+{/test/u_IOTDF/binary_gray_converter_0/rst} \
+{/test/u_IOTDF/fn_sel\[2:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/mode} \
+{/test/u_IOTDF/binary_gray_converter_0/converter_start} \
+{/test/u_IOTDF/binary_gray_converter_0/current_state\[1:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_input\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/gray_to_bin_xor_output\[7:0\]} \
+{/test/u_IOTDF/binary_gray_converter_0/next_xor_carry} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_in} \
+{/test/u_IOTDF/binary_gray_converter_0/xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/reset_xor_carry_reg} \
+{/test/u_IOTDF/binary_gray_converter_0/save_xor_carry_reg} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvGetSignalClose -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF"
+wvGetSignalClose -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/test"
+wvGetSignalSetScope -win $_nWave1 "/test/u_IOTDF"
+wvGetSignalClose -win $_nWave1
+wvExit

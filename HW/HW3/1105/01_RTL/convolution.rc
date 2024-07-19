@@ -1,0 +1,144 @@
+Magic 271485
+Revision Verdi_T-2022.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 8 31 1920 1009 436 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/01_RTL/core.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 10993856.248015 11007990.818327
+cursor 11000923.53317101300
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 11
+; marker line index
+markerPos 37
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/01_RTL/core.fsdb"
+addSignal -h 15 /testbed/u_core/i_clk
+addGroup "G2"
+addSignal -h 15 /testbed/u_core/i_in_valid
+addSignal -h 15 -UNSIGNED -UDEC -holdScope i_in_data[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope current_state[4:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope i_op_mode[3:0]
+addSignal -h 15 -holdScope i_op_valid
+addSignal -h 15 -UNSIGNED -HEX -holdScope origin_x[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope origin_y[3:0]
+addSignal -h 15 -holdScope conv_engine_start_trigger
+addGroup "G3"
+addSignal -h 15 -UNSIGNED -HEX /testbed/u_core/convEngin0/current_state[4:0]
+addSignal -h 15 -holdScope i_clk
+addSignal -h 15 -UNSIGNED -HEX -holdScope i_origin_x[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope i_origin_y[3:0]
+addSignal -h 15 -holdScope save_conv_result
+addSignal -h 15 -holdScope o_output_valid
+addSignal -h 15 -UNSIGNED -HEX -holdScope i_channel_window[1:0]
+addSignal -h 15 -holdScope line_buffer_sram[0:15]
+addSignal -expanded -h 15 -holdScope multiplied_with_kernel[0:15]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[0][0:8]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[1][0:8]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[2][0:8]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[3][0:8]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[4][0:8]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[5][0:8]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[6][0:8]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[7][0:8]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[8][0:8]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[9][0:8]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[10][0:8]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[11][0:8]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[12][0:8]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[13][0:8]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[14][0:8]
+addSignal -h 15 -UNSIGNED -HEX -holdScope multiplied_with_kernel[15][0:8]
+addSignal -h 15 -holdScope multiplied_with_kernel_sigle_channel_sum[0:15]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[1][17:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[15][17:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[3][17:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[5][17:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[7][17:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[9][17:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[10][17:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[12][17:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[0][17:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[14][17:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[2][17:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[4][17:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[6][17:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[8][17:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[11][17:0]
+addSignal -UNSIGNED -UDEC -HIDDEN -holdScope multiplied_with_kernel_sigle_channel_sum[13][17:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope multiplied_with_kernel_all_channel_sum[17:0]
+addSignal -expanded -h 15 -holdScope saved_conv_result[0:3]
+addSignal -h 15 -UNSIGNED -HEX -holdScope conv_result_counter_value[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope saved_conv_result[0][17:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope saved_conv_result[1][17:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope saved_conv_result[2][17:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope saved_conv_result[3][17:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope o_output_data[13:0]
+addSignal -h 15 -holdScope o_finished
+addSignal -h 15 -UNSIGNED -HEX -holdScope o_mmu_x_index[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope o_mmu_y_index[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope o_mmu_channel_index[4:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope counter0_value[5:0]
+addSignal -h 15 -holdScope set_x_index_counter_to_conv_origin
+addSignal -h 15 -holdScope set_y_index_counter_to_conv_origin
+addSignal -h 15 -holdScope shift_line_buffer
+addSignal -h 15 -holdScope sram_data[0:15]
+addSignal -h 15 -UNSIGNED -HEX -holdScope x_index_counter_value[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope y_index_counter_value[3:0]
+addGroup "G4"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/01_RTL/core.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/testbed"
+"/testbed/u_core"
+"/testbed/u_core/convEngin0"
+
+SCOPE_LIST_BEGIN
+"/testbed"
+"/testbed/u_core"
+"/testbed/u_core/mmu0"
+"/testbed/u_core/convEngin0"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

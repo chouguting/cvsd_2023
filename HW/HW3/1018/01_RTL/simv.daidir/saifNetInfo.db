@@ -1,0 +1,16 @@
+5
+core
+sram0_addr
+All
+core
+sram0_chip_enable
+Scal
+core
+sram0_data_in
+All
+core
+sram0_data_out
+All
+core
+sram0_write_enable
+Scal

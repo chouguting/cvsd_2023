@@ -1,0 +1,126 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'core' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : core
+Version: U-2022.12
+Date   : Mon Nov  6 01:33:16 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: convEngin0/line_buffer_sram_reg[0][10][4]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: convEngin0/saved_median_result_reg[0][0][6]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core               tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  convEngin0/line_buffer_sram_reg[0][10][4]/CK (DFFRX4)
+                                                          0.00 #     0.50 r
+  convEngin0/line_buffer_sram_reg[0][10][4]/Q (DFFRX4)
+                                                          0.60       1.10 f
+  convEngin0/U4537/Y (NOR2X4)                             0.15       1.25 r
+  convEngin0/U4538/Y (NOR3X4)                             0.11       1.36 f
+  convEngin0/U4539/Y (NOR2X4)                             0.11       1.47 r
+  convEngin0/U2397/Y (NAND3X4)                            0.12       1.59 f
+  convEngin0/U2390/Y (NAND2X6)                            0.10       1.69 r
+  convEngin0/U2373/Y (INVX12)                             0.09       1.77 f
+  convEngin0/U4551/Y (INVX16)                             0.11       1.88 r
+  convEngin0/U4554/Y (MXI2X8)                             0.19       2.07 f
+  convEngin0/U4555/Y (OAI2BB1X2)                          0.13       2.19 r
+  convEngin0/U2313/Y (NAND3X2)                            0.13       2.32 f
+  convEngin0/U4563/Y (NAND3X4)                            0.12       2.45 r
+  convEngin0/U1782/Y (NAND3X4)                            0.10       2.55 f
+  convEngin0/U1778/Y (NAND2X4)                            0.10       2.65 r
+  convEngin0/U2267/Y (NAND2X6)                            0.08       2.73 f
+  convEngin0/U1760/Y (INVX12)                             0.11       2.84 r
+  convEngin0/U4578/Y (INVX20)                             0.08       2.93 f
+  convEngin0/U1093/Y (MXI2X6)                             0.18       3.11 f
+  convEngin0/U4596/Y (AOI2BB2X4)                          0.21       3.32 r
+  convEngin0/U1054/Y (OR2X4)                              0.18       3.50 r
+  convEngin0/U2731/Y (NAND2X4)                            0.09       3.59 f
+  convEngin0/U1653/Y (NAND2X6)                            0.10       3.68 r
+  convEngin0/U2104/Y (INVX12)                             0.08       3.76 f
+  convEngin0/U4666/Y (INVX20)                             0.12       3.88 r
+  convEngin0/U4667/Y (MXI2X8)                             0.20       4.08 r
+  convEngin0/U1613/Y (INVX8)                              0.09       4.17 f
+  convEngin0/U4670/Y (NAND2X6)                            0.08       4.26 r
+  convEngin0/U1610/Y (NAND3X6)                            0.09       4.35 f
+  convEngin0/U1604/Y (NAND4X4)                            0.11       4.46 r
+  convEngin0/U4691/Y (NAND3X6)                            0.11       4.57 f
+  convEngin0/U4700/Y (NAND2X8)                            0.09       4.67 r
+  convEngin0/U4701/Y (INVX16)                             0.08       4.75 f
+  convEngin0/U917/Y (INVX12)                              0.08       4.83 r
+  convEngin0/U912/Y (MXI2X4)                              0.18       5.01 r
+  convEngin0/U4763/Y (NAND2X2)                            0.14       5.15 f
+  convEngin0/U831/Y (NAND3X4)                             0.17       5.32 r
+  convEngin0/U4771/Y (NAND3X6)                            0.11       5.43 f
+  convEngin0/U3832/Y (NAND3X6)                            0.08       5.51 r
+  convEngin0/U3831/Y (AND2X8)                             0.15       5.66 r
+  convEngin0/U3830/Y (INVX20)                             0.07       5.73 f
+  convEngin0/U2530/Y (MXI2X4)                             0.15       5.88 r
+  convEngin0/U4793/Y (NAND2X2)                            0.14       6.02 f
+  convEngin0/U4798/Y (NAND2X4)                            0.12       6.14 r
+  convEngin0/U3823/Y (NAND3X6)                            0.10       6.24 f
+  convEngin0/U3822/Y (NAND3X6)                            0.08       6.32 r
+  convEngin0/U553/Y (NAND3X4)                             0.11       6.43 f
+  convEngin0/U3826/Y (AND3X8)                             0.17       6.60 f
+  convEngin0/U3821/Y (INVX20)                             0.09       6.69 r
+  convEngin0/U4877/Y (MXI2X4)                             0.20       6.89 r
+  convEngin0/U4879/Y (NOR2X2)                             0.14       7.03 f
+  convEngin0/U441/Y (NOR3X2)                              0.25       7.28 r
+  convEngin0/U1938/Y (NAND3X4)                            0.15       7.44 f
+  convEngin0/U1934/Y (NAND2X6)                            0.10       7.54 r
+  convEngin0/U1933/Y (INVX12)                             0.07       7.61 f
+  convEngin0/U3801/Y (INVX12)                             0.10       7.71 r
+  convEngin0/U1928/Y (MXI2X4)                             0.24       7.95 r
+  convEngin0/U1561/Y (INVX6)                              0.09       8.04 f
+  convEngin0/U4952/Y (NAND2X4)                            0.09       8.13 r
+  convEngin0/U4953/Y (OAI21X4)                            0.09       8.22 f
+  convEngin0/U3817/Y (NAND2X4)                            0.10       8.32 r
+  convEngin0/U3816/Y (AND3X8)                             0.18       8.49 r
+  convEngin0/U2487/Y (INVX16)                             0.08       8.57 f
+  convEngin0/U4958/Y (MXI2X2)                             0.25       8.83 r
+  convEngin0/U4959/Y (INVX4)                              0.15       8.97 f
+  convEngin0/U4962/Y (NAND2X1)                            0.17       9.14 r
+  convEngin0/U1919/Y (OAI2BB1X2)                          0.20       9.34 r
+  convEngin0/U1918/Y (AND2X6)                             0.15       9.49 r
+  convEngin0/U3802/Y (NAND2X8)                            0.16       9.65 f
+  convEngin0/U4217/Y (NAND2X2)                            0.15       9.80 r
+  convEngin0/U3922/Y (NAND2X4)                            0.14       9.94 f
+  convEngin0/U12111/Y (MXI2X1)                            0.24      10.18 r
+  convEngin0/saved_median_result_reg[0][0][6]/D (DFFRX2)
+                                                          0.00      10.18 r
+  data arrival time                                                 10.18
+
+  clock i_clk (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  convEngin0/saved_median_result_reg[0][0][6]/CK (DFFRX2)
+                                                          0.00      10.40 r
+  library setup time                                     -0.21      10.19
+  data required time                                                10.19
+  --------------------------------------------------------------------------
+  data required time                                                10.19
+  data arrival time                                                -10.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

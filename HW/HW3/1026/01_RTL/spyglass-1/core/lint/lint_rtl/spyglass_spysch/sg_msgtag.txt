@@ -1,0 +1,41 @@
+12 "WarnAnalyzeBBox" 2
+"BBoxEng"
+["sram_256x8","BB_NO_FUNC_VIEW"]
+"BBoxEngAuxiInfo"
+["(null)","(null)","(null)"]
+-1 "DetectTopDesignUnits" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"
+-1 "ElabSummary" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"
+-1 "ReportPortInfo-ML" 3
+"TEMPLATE"
+["lint/lint_rtl"]
+"RULE_ORDER"
+[42]
+"RULEGROUP"
+["morelint"]
+-1 "W287b" 3
+"TEMPLATE"
+["lint/lint_rtl"]
+"RULE_ORDER"
+[92]
+"RULEGROUP"
+["lint/Instance"]
+-1 "W528" 3
+"TEMPLATE"
+["lint/lint_rtl"]
+"RULE_ORDER"
+[95]
+"RULEGROUP"
+["lint/Lint_Elab_Rules","lint/Usage"]
+-1 "WarnAnalyzeBBox" 2
+"RULEGROUP"
+["Blackbox Resolution"]
+"BUILTIN"
+"1"

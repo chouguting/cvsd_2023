@@ -1,0 +1,38 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "test": [
+        "test",
+        "x9Hvb",
+        "module",
+        4
+    ],
+    "finalPermutation": [
+        "finalPermutation",
+        "PZgp1",
+        "module",
+        2
+    ],
+    "roundPermutation": [
+        "roundPermutation",
+        "uBzn3",
+        "module",
+        7
+    ],
+    "sbox8": [
+        "sbox8",
+        "qWKaC",
+        "module",
+        8
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        3
+    ]
+}

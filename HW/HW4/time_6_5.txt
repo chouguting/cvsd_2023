@@ -1,0 +1,22 @@
+
+
+6.5 ns
+Total cell area:                 50159.866273
+
+Total cost time:    6383.00 ns
+Total cost time:    6383.00 ns
+Total cost time:    6376.50 ns
+Total cost time:    6383.00 ns
+Total cost time:    6383.00 ns
+
+Total Power            = 4.183e-03  (100.00%)
+Total Power            = 4.006e-03
+Total Power            = 3.978e-03
+Total Power            = 3.967e-03
+Total Power            = 4.001e-03
+
+performance
+(4.183*6383+4.006*6383+3.978*6376.5+3.967*6383+4.001*6383)*50159.866273
+=6.445334552315734504 × 10^9
+
+

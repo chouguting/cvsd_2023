@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1697700625.757759350, "rt":0.43, "ut":0.08, "st":0.08}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1697700625.273020671}
+{"VCS_COMP_START_TIME": 1697700625.273020671}
+{"VCS_COMP_END_TIME": 1697700627.455264430}
+{"VCS_USER_OPTIONS": "-f test_mmu.f -full64 -R -debug_access+all +v2k +notimingcheck -sverilog"}

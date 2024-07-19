@@ -1,0 +1,112 @@
+Magic 271485
+Revision Verdi_T-2022.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 8 31 1920 1009 375 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/raid7_2/user12/r2921a01/hw/hw4/1121_hw4/01_RTL/test_input.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 11241.858617 16236.194555
+cursor 13872.98745378959
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 34
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/raid7_2/user12/r2921a01/hw/hw4/1121_hw4/01_RTL/test_input.fsdb"
+addSignal -h 15 /test/u_IOTDF/clk
+addSignal -h 15 -UNSIGNED -HEX -holdScope cuerrent_state[3:0]
+addSignal -h 15 -holdScope busy
+addSignal -h 15 -UNSIGNED -UDEC /test/i[31:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope j[31:0]
+addSignal -h 15 -UNSIGNED -HEX /test/u_IOTDF/iot_in[7:0]
+addSignal -h 15 -holdScope in_en
+addSignal -h 15 -holdScope received_data_valid
+addSignal -h 15 -UNSIGNED -HEX -holdScope received_128_bit_data[127:0]
+addGroup "G2"
+addSignal -h 15 -UNSIGNED -HEX /test/in_tmp[127:0]
+addGroup "G3"
+addSignal -h 15 /test/u_IOTDF/des_module_0/rst
+addSignal -h 15 -holdScope des_start
+addSignal -h 15 -UNSIGNED -HEX -holdScope current_des_state[4:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope work_register[127:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope des_round_counter[3:0]
+addSignal -h 15 -holdScope working
+addSignal -h 15 -UNSIGNED -HEX -holdScope des_sub_key[47:0]
+addGroup "G4"
+addSignal -h 15 -UNSIGNED -HEX /test/u_IOTDF/des_module_0/init_perm/unpermuted[63:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope permuted[63:0]
+addSignal -h 15 /test/u_IOTDF/des_module_0/key_scheduler_0/next_key
+addGroup "G5"
+addSignal -h 15 -UNSIGNED -HEX /test/u_IOTDF/des_module_0/key_scheduler_0/permuted_cipher_key[55:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope key_reg_left_part[27:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope key_reg_right_part[27:0]
+addSignal -h 15 -holdScope load_key_reg
+addSignal -h 15 -UNSIGNED -HEX -holdScope input_for_shifter_left_part[27:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope input_for_shifter_right_part[27:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope left_part_shifter_1bit_out[27:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope right_part_shifter_1bit_out[27:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope left_part_shifter_2bit_out[27:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope right_part_shifter_2bit_out[27:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope input_for_pc2_permutation[55:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope key_out[47:0]
+addGroup "G6"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/raid7_2/user12/r2921a01/hw/hw4/1121_hw4/01_RTL/test_input.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/test"
+"/test/u_IOTDF"
+"/test/u_IOTDF/des_module_0"
+"/test/u_IOTDF/des_module_0/init_perm"
+"/test/u_IOTDF/des_module_0/key_scheduler_0"
+
+SCOPE_LIST_BEGIN
+"/test"
+"/test/u_IOTDF"
+"/test/u_IOTDF/des_module_0"
+"/test/u_IOTDF/des_module_0/init_perm"
+"/test/u_IOTDF/des_module_0/key_scheduler_0"
+"/test/u_IOTDF/input_receiver_0"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

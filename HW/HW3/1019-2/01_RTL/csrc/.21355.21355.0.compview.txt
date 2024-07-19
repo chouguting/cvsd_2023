@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1697555101.981805347, "rt":1.01, "ut":0.30, "st":0.24}}
+{"vcselab":{"timestamp_begin":1697555103.091433287, "rt":0.94, "ut":0.37, "st":0.20}}
+{"link":{"timestamp_begin":1697555104.097417846, "rt":0.37, "ut":0.19, "st":0.13}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1697555101.489671770}
+{"VCS_COMP_START_TIME": 1697555101.489671770}
+{"VCS_COMP_END_TIME": 1697555106.626613563}
+{"VCS_USER_OPTIONS": "-f test_sram_erite.f -full64 -R -debug_access+all +v2k +notimingcheck"}
+{"vcs1": {"peak_mem": 330460}}
+{"stitch_vcselab": {"peak_mem": 229020}}

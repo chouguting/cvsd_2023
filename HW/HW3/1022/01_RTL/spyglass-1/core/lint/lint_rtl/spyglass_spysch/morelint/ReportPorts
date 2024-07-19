@@ -1,0 +1,11 @@
+SCHEMA@@PName@@Dir@@Msb@@Lsb@@Desc@@DU@@DU_BBOX
+VALUE@@i_clk@@INPUT@@0@@0@@Don't modify interface@@core@@No
+VALUE@@i_rst_n@@INPUT@@0@@0@@-@@core@@No
+VALUE@@i_op_valid@@INPUT@@0@@0@@-@@core@@No
+VALUE@@i_op_mode@@INPUT@@3@@0@@-@@core@@No
+VALUE@@o_op_ready@@OUTPUT@@0@@0@@-@@core@@No
+VALUE@@i_in_valid@@INPUT@@0@@0@@-@@core@@No
+VALUE@@i_in_data@@INPUT@@7@@0@@-@@core@@No
+VALUE@@o_in_ready@@OUTPUT@@0@@0@@-@@core@@No
+VALUE@@o_out_valid@@OUTPUT@@0@@0@@-@@core@@No
+VALUE@@o_out_data@@OUTPUT@@13@@0@@-@@core@@No

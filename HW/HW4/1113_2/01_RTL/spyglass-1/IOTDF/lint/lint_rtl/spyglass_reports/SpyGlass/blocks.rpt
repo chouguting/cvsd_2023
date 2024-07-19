@@ -1,0 +1,5 @@
+inputReceiver@@@@IOTDF.input_receiver_0
+desModule@@@@IOTDF.des_module_0
+crcModule@@@@IOTDF.crc_module_0
+binaryGrayConverter@@@@IOTDF.binary_gray_converter_0
+outputModule@@@@IOTDF.output_module_0

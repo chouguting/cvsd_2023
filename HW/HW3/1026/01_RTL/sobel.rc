@@ -1,0 +1,127 @@
+Magic 271485
+Revision Verdi_T-2022.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 8 31 1920 1009 436 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/01_RTL/core.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 10741786.923204 10797154.110702
+cursor 10769470.51695259474
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 11
+; marker line index
+markerPos 52
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/01_RTL/core.fsdb"
+addSignal -h 15 /testbed/u_core/i_clk
+addGroup "G2"
+addSignal -h 15 /testbed/u_core/i_in_valid
+addSignal -h 15 -UNSIGNED -UDEC -holdScope i_in_data[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope current_state[4:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope i_op_mode[3:0]
+addSignal -h 15 -holdScope i_op_valid
+addSignal -h 15 -UNSIGNED -HEX -holdScope origin_x[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope origin_y[3:0]
+addSignal -h 15 -holdScope conv_engine_start_trigger
+addGroup "G3"
+addSignal -h 15 -UNSIGNED -HEX /testbed/u_core/convEngin0/current_state[4:0]
+addSignal -h 15 -holdScope i_clk
+addSignal -h 15 -UNSIGNED -HEX -holdScope i_origin_x[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope i_origin_y[3:0]
+addSignal -h 15 -holdScope line_buffer_sram[0:15]
+addSignal -h 15 -holdScope o_finished
+addSignal -h 15 -holdScope o_output_valid
+addSignal -h 15 -UNSIGNED -HEX -holdScope i_channel_window[1:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope o_output_data[13:0]
+addSignal -h 15 -holdScope save_sobel_degree
+addSignal -h 15 -holdScope save_sobel_result
+addSignal -h 15 -UNSIGNED -UDEC -holdScope saved_sobel_degree[0:3]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope saved_sobel_result[0:3]
+addSignal -expanded -h 15 -2COMP -UDEC -holdScope sobel_x_single_channel_sum[0:3]
+addSignal -h 15 -2COMP -UDEC -holdScope sobel_x_single_channel_sum[0][13:0]
+addSignal -h 15 -2COMP -UDEC -holdScope sobel_x_single_channel_sum[1][13:0]
+addSignal -h 15 -2COMP -UDEC -holdScope sobel_x_single_channel_sum[2][13:0]
+addSignal -h 15 -2COMP -UDEC -holdScope sobel_x_single_channel_sum[3][13:0]
+addSignal -expanded -h 15 -2COMP -UDEC -holdScope sobel_y_single_channel_sum[0:3]
+addSignal -h 15 -2COMP -UDEC -holdScope sobel_y_single_channel_sum[0][13:0]
+addSignal -h 15 -2COMP -UDEC -holdScope sobel_y_single_channel_sum[1][13:0]
+addSignal -h 15 -2COMP -UDEC -holdScope sobel_y_single_channel_sum[2][13:0]
+addSignal -h 15 -2COMP -UDEC -holdScope sobel_y_single_channel_sum[3][13:0]
+addSignal -expanded -h 15 -holdScope sobel_degree[0:3]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sobel_degree[0][3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sobel_degree[1][3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sobel_degree[2][3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sobel_degree[3][3:0]
+addGroup "G4"
+addSignal -h 15 -2COMP -UDEC /testbed/u_core/convEngin0/generate_sobel_degree[0]/arctan_approx/i_data_x[13:0]
+addSignal -h 15 -2COMP -UDEC -holdScope i_data_y[13:0]
+addSignal -h 15 -holdScope same_sign
+addSignal -h 15 -UNSIGNED -HEX -holdScope abs_x[13:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope abs_x_extended[21:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope abs_y[13:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope abs_y_extended[21:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope x_times_tan_0[21:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope x_times_tan_22_5[21:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope x_times_tan_45[21:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope x_times_tan_67_5[21:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope o_degree_approx[3:0]
+addGroup "G5"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/raid7_2/user12/r2921a01/hw/hw3/1121_hw3/01_RTL/core.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/testbed"
+"/testbed/u_core"
+"/testbed/u_core/convEngin0"
+"/testbed/u_core/convEngin0/generate_sobel_degree[0]"
+
+SCOPE_LIST_BEGIN
+"/testbed"
+"/testbed/u_core"
+"/testbed/u_core/mmu0"
+"/testbed/u_core/convEngin0"
+"/testbed/u_core/convEngin0/generate_sobel_degree[0]"
+"/testbed/u_core/convEngin0/generate_sobel_degree[0]/arctan_approx"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
